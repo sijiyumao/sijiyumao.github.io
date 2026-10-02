@@ -6,57 +6,103 @@ backend:
 media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
+slug:
+  encoding: "ascii"
+  clean_accents: true
+  sanitize_replacement: "-"
+
 collections:
-  - name: "library"
-    label: "Novel Library"
-    description: "Manage novels and chapters for Yumao Novels."
-    files:
-      - label: "All Novels"
-        name: "novels"
-        file: "content/novels.json"
-        format: "json"
-        fields:
-          - label: "Novels"
-            name: "novels"
-            widget: "list"
-            label_singular: "Novel"
-            summary: "{{fields.title}}"
-            collapsed: true
-            fields:
-              - {label: "Novel ID", name: "id", widget: "string", hint: "Use lowercase letters and hyphens, e.g. my-first-novel"}
-              - {label: "Title", name: "title", widget: "string"}
-              - label: "Type"
-                name: "type"
-                widget: "select"
-                options:
-                  - {label: "Chinese Translation", value: "translation"}
-                  - {label: "Original Novel", value: "original"}
-              - label: "Status"
-                name: "status"
-                widget: "select"
-                options: ["ongoing", "completed", "hiatus"]
-              - {label: "Description", name: "desc", widget: "text"}
-              - label: "Cover Image"
-                name: "cover"
-                widget: "image"
-                required: false
-                hint: "Optional. The current reader design also works without a cover."
-              - label: "Tags"
-                name: "tags"
-                widget: "list"
-                field: {label: "Tag", name: "tag", widget: "string"}
-              - label: "Chapters"
-                name: "chapters"
-                widget: "list"
-                label_singular: "Chapter"
-                summary: "Chapter {{fields.n}} — {{fields.title}}"
-                collapsed: true
-                fields:
-                  - {label: "Chapter Number", name: "n", widget: "number", value_type: "int", min: 1}
-                  - {label: "Chapter Title", name: "title", widget: "string"}
-                  - {label: "Publication Date", name: "date", widget: "date", format: "YYYY-MM-DD"}
-                  - label: "Chapter Text"
-                    name: "text"
-                    widget: "list"
-                    label_singular: "Paragraph"
-                    field: {label: "Paragraph", name: "paragraph", widget: "text"}
+  - name: "novels"
+    label: "Novels"
+    label_singular: "Novel"
+    description: "Create and manage novels."
+    folder: "content/novels"
+    create: true
+    extension: "json"
+    format: "json"
+    identifier_field: "title"
+    slug: "{fields.id}"
+    summary: "{title} — {type} · {status}"
+    sortable_fields: ["title", "status", "type"]
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Novel ID"
+        name: "id"
+        widget: "string"
+        hint: "Permanent URL ID. Use lowercase letters, numbers and hyphens only, e.g. moonlit-teahouse. Do not change this after publishing chapters."
+        pattern: ['^[a-z0-9]+(?:-[a-z0-9]+)*$', "Use lowercase letters, numbers, and hyphens only."]
+      - label: "Type"
+        name: "type"
+        widget: "select"
+        options:
+          - {label: "Chinese Translation", value: "translation"}
+          - {label: "Original Novel", value: "original"}
+      - label: "Status"
+        name: "status"
+        widget: "select"
+        options:
+          - {label: "Ongoing", value: "ongoing"}
+          - {label: "Completed", value: "completed"}
+          - {label: "Hiatus", value: "hiatus"}
+      - label: "Description"
+        name: "desc"
+        widget: "text"
+      - label: "Cover Image"
+        name: "cover"
+        widget: "image"
+        required: false
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        required: false
+        field: {label: "Tag", name: "tag", widget: "string"}
+
+  - name: "chapters"
+    label: "Chapters"
+    label_singular: "Chapter"
+    description: "Write and publish individual chapters."
+    folder: "content/chapters"
+    create: true
+    extension: "md"
+    format: "frontmatter"
+    identifier_field: "title"
+    slug: "{fields.novel}-{fields.chapter_number}-{slug}"
+    summary: "{novel} · Ch. {chapter_number} — {title}"
+    sortable_fields: ["date", "title", "chapter_number"]
+    fields:
+      - label: "Chapter Title"
+        name: "title"
+        widget: "string"
+      - label: "Novel"
+        name: "novel"
+        widget: "relation"
+        collection: "novels"
+        search_fields: ["title", "id"]
+        display_fields: ["title"]
+        value_field: "id"
+        hint: "Choose the novel this chapter belongs to."
+      - label: "Chapter Number"
+        name: "chapter_number"
+        widget: "number"
+        value_type: "int"
+        min: 1
+      - label: "Publication Date"
+        name: "date"
+        widget: "datetime"
+        date_format: "YYYY-MM-DD"
+        time_format: false
+        format: "YYYY-MM-DD"
+      - label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: false
+        required: false
+        hint: "Turn this on to keep the chapter hidden from the public site."
+      - label: "Chapter Text"
+        name: "body"
+        widget: "richtext"
+        modes: ["rich_text", "raw"]
+        buttons: ["bold", "italic", "strikethrough", "link", "heading-two", "heading-three", "quote"]
+        editor_components: []
