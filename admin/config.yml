@@ -22,7 +22,7 @@ collections:
     format: "json"
     identifier_field: "title"
     slug: "{fields.id}"
-    summary: "{title} — {type} · {status}"
+    summary: "{{fields.title}} — {{fields.type}} · {{fields.status}}"
     sortable_fields: ["title", "status", "type"]
     fields:
       - label: "Title"
@@ -69,7 +69,7 @@ collections:
     format: "frontmatter"
     identifier_field: "title"
     slug: "{fields.novel}-{fields.chapter_number}-{slug}"
-    summary: "{novel} · Ch. {chapter_number} — {title}"
+    summary: "{{fields.novel}} · Ch. {{fields.chapter_number}} — {{fields.title}}"
     sortable_fields: ["date", "title", "chapter_number"]
     fields:
       - label: "Chapter Title"
