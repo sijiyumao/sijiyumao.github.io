@@ -1,0 +1,36 @@
+name: Update content manifest
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "content/novels/**"
+      - "content/chapters/**"
+      - "scripts/build-manifest.py"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-manifest:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Build manifest
+        run: python scripts/build-manifest.py
+
+      - name: Commit manifest if changed
+        run: |
+          if git diff --quiet -- content/manifest.json; then
+            echo "Manifest is already up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/manifest.json
+          git commit -m "Update content manifest"
+          git push
