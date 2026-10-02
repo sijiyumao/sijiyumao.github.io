@@ -156,139 +156,111 @@ footer{padding:40px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 <footer>Yumao Novels · stories, translations & little worlds 🌸 · <a href="./admin/">Admin</a></footer>
 
 <script>
-let novels = [];
-let filter = "all";
+let novels=[], filter="all";
 
+function escapeHtml(v){return String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));}
+
+function parseChapter(text){
+  const m=text.match(/^---\s*\n([\s\S]*?)\n---\s*\n?([\s\S]*)$/);
+  if(!m) return null;
+  const meta={};
+  m[1].split("\n").forEach(line=>{
+    const x=line.match(/^([^:]+):\s*(.*)$/);
+    if(x){
+      let v=x[2].trim().replace(/^["']|["']$/g,"");
+      if(v==="true") v=true; else if(v==="false") v=false;
+      else if(/^\d+$/.test(v)) v=Number(v);
+      meta[x[1].trim()]=v;
+    }
+  });
+  meta.body=m[2].trim();
+  return meta;
+}
+function inlineMd(t){
+  return escapeHtml(t)
+    .replace(/\*\*(.+?)\*\*/g,"<strong>$1</strong>")
+    .replace(/\*(.+?)\*/g,"<em>$1</em>")
+    .replace(/~~(.+?)~~/g,"<del>$1</del>")
+    .replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g,'<a href="$2" rel="noopener">$1</a>');
+}
+function renderMarkdown(md){
+  return md.split(/\n{2,}/).map(block=>{
+    block=block.trim(); if(!block) return "";
+    if(block.startsWith("### ")) return `<h3>${inlineMd(block.slice(4))}</h3>`;
+    if(block.startsWith("## ")) return `<h2>${inlineMd(block.slice(3))}</h2>`;
+    if(block.startsWith("> ")) return `<blockquote>${inlineMd(block.slice(2).replace(/\n>\s?/g," "))}</blockquote>`;
+    return `<p>${inlineMd(block.replace(/\n/g,"<br>"))}</p>`;
+  }).join("");
+}
 async function loadContent(){
   try{
-    const response = await fetch("./content/novels.json", {cache:"no-store"});
-    if(!response.ok) throw new Error("Could not load content");
-    const data = await response.json();
-    novels = Array.isArray(data.novels) ? data.novels : [];
-  }catch(error){
-    console.error(error);
-    novels = [];
-  }
-  renderNovels();
-  renderRecent();
-  route();
+    const manifest=await fetch("./content/manifest.json",{cache:"no-store"}).then(r=>r.json());
+    const novelData=await Promise.all(manifest.novels.map(p=>fetch("./"+p,{cache:"no-store"}).then(r=>r.json())));
+    const chapterData=(await Promise.all(manifest.chapters.map(p=>fetch("./"+p,{cache:"no-store"}).then(r=>r.text()).then(parseChapter))))
+      .filter(Boolean).filter(c=>!c.draft);
+    novels=novelData.map(n=>({...n,chapters:chapterData.filter(c=>c.novel===n.id).sort((a,b)=>a.chapter_number-b.chapter_number)}));
+  }catch(err){console.error(err); novels=[];}
+  renderNovels(); renderRecent(); route();
 }
-
 function showPage(id){
   document.querySelectorAll(".page").forEach(p=>p.classList.remove("active"));
-  const page = document.getElementById(id);
-  if(page) page.classList.add("active");
+  document.getElementById(id)?.classList.add("active");
   window.scrollTo({top:0,behavior:"smooth"});
-  document.querySelector("nav").classList.remove("open");
+  document.querySelector("nav")?.classList.remove("open");
 }
-
 function card(n){
-  const cls = n.id==="spring-in-september" ? "alt1" : n.id==="jade-after-snow" ? "alt2" : "";
-  return `<div class="card">
-    <div class="cover ${cls}"><div class="cover-title">${escapeHtml(n.title)}</div></div>
-    <div class="card-body">
-      <div class="meta">${n.type==="translation"?"Translation":"Original"} · ${escapeHtml(n.status)}</div>
-      <h3>${escapeHtml(n.title)}</h3>
-      <p class="meta">${escapeHtml(n.desc || "")}</p>
-      <div class="tags">${(n.tags||[]).map(t=>`<span class="tag">${escapeHtml(t)}</span>`).join("")}</div>
-      <a class="read-link" href="#novel/${encodeURIComponent(n.id)}">Read from chapter 1 →</a>
-    </div>
-  </div>`;
+  const cls=n.id==="spring-in-september"?"alt1":n.id==="jade-after-snow"?"alt2":"";
+  const cover=n.cover?`style="background-image:url('${escapeHtml(n.cover)}');background-size:cover;background-position:center"`:"";
+  return `<div class="card"><div class="cover ${cls}" ${cover}><div class="cover-title">${escapeHtml(n.title)}</div></div>
+  <div class="card-body"><div class="meta">${n.type==="translation"?"Translation":"Original"} · ${escapeHtml(n.status)}</div>
+  <h3>${escapeHtml(n.title)}</h3><p class="meta">${escapeHtml(n.desc||"")}</p>
+  <div class="tags">${(n.tags||[]).map(t=>`<span class="tag">${escapeHtml(t)}</span>`).join("")}</div>
+  <a class="read-link" href="#novel/${encodeURIComponent(n.id)}">View chapters →</a></div></div>`;
 }
-
 function renderNovels(){
-  const input = document.getElementById("search");
-  const q = (input ? input.value : "").toLowerCase();
-  const list = novels.filter(n =>
-    (filter==="all" || n.type===filter || n.status===filter) &&
-    (`${n.title} ${n.desc||""} ${(n.tags||[]).join(" ")}`).toLowerCase().includes(q)
-  );
-  document.getElementById("novelGrid").innerHTML = list.length
-    ? list.map(card).join("")
-    : `<div class="empty">No novels found. Try another search.</div>`;
+  const q=(document.getElementById("search")?.value||"").toLowerCase();
+  const list=novels.filter(n=>(filter==="all"||n.type===filter||n.status===filter)&&(`${n.title} ${n.desc||""} ${(n.tags||[]).join(" ")}`).toLowerCase().includes(q));
+  const el=document.getElementById("novelGrid"); if(el) el.innerHTML=list.length?list.map(card).join(""):`<div class="empty">No novels found.</div>`;
 }
-
-function setFilter(f){
-  filter=f;
-  document.querySelectorAll(".filter").forEach(b=>b.classList.toggle("active",b.dataset.filter===f));
-  renderNovels();
-}
-
-function chapterDate(c){
-  return c.date || "";
-}
-
+function setFilter(f){filter=f;document.querySelectorAll(".filter").forEach(b=>b.classList.toggle("active",b.dataset.filter===f));renderNovels();}
 function renderRecent(){
-  const items = novels.flatMap(n=>(n.chapters||[]).map(c=>({...c,novel:n})))
-    .sort((a,b)=>chapterDate(a).localeCompare(chapterDate(b))).reverse().slice(0,3);
-
-  document.getElementById("recent").innerHTML = items.length
-    ? items.map(x=>`<div class="card"><div class="card-body">
-        <div class="meta">${escapeHtml(x.date)} · ${escapeHtml(x.novel.title)}</div>
-        <h3>${escapeHtml(x.title)}</h3><p class="meta">Chapter ${x.n}</p>
-        <a class="read-link" href="#read/${encodeURIComponent(x.novel.id)}/${x.n}">Read chapter →</a>
-      </div></div>`).join("")
-    : `<div class="empty">No chapters have been published yet.</div>`;
-
-  document.getElementById("updatesList").innerHTML = items.length
-    ? items.map(x=>`<a class="chapter" href="#read/${encodeURIComponent(x.novel.id)}/${x.n}">
-        <span><strong>${escapeHtml(x.novel.title)}</strong><br>${escapeHtml(x.title)}</span>
-        <small>${escapeHtml(x.date)} · Chapter ${x.n}</small>
-      </a>`).join("")
-    : `<div class="empty">No updates yet.</div>`;
+  const items=novels.flatMap(n=>(n.chapters||[]).map(c=>({...c,novelObj:n}))).sort((a,b)=>String(b.date).localeCompare(String(a.date))).slice(0,6);
+  const cards=items.slice(0,3).map(x=>`<div class="card"><div class="card-body"><div class="meta">${escapeHtml(x.date)} · ${escapeHtml(x.novelObj.title)}</div><h3>${escapeHtml(x.title)}</h3><p class="meta">Chapter ${x.chapter_number}</p><a class="read-link" href="#read/${encodeURIComponent(x.novelObj.id)}/${x.chapter_number}">Read chapter →</a></div></div>`).join("");
+  const recent=document.getElementById("recent"); if(recent) recent.innerHTML=cards||`<div class="empty">No chapters yet.</div>`;
+  const updates=document.getElementById("updatesList"); if(updates) updates.innerHTML=items.map(x=>`<a class="chapter" href="#read/${encodeURIComponent(x.novelObj.id)}/${x.chapter_number}"><span><strong>${escapeHtml(x.novelObj.title)}</strong><br>${escapeHtml(x.title)}</span><small>${escapeHtml(x.date)} · Chapter ${x.chapter_number}</small></a>`).join("")||`<div class="empty">No updates yet.</div>`;
 }
-
 function openNovel(id){
-  const n=novels.find(x=>x.id===id);
-  if(!n) return;
-  const chapters=n.chapters||[];
+  const n=novels.find(x=>x.id===id); if(!n)return;
   document.getElementById("novelCover").textContent=n.title;
   document.getElementById("novelTitle").textContent=n.title;
-  document.getElementById("novelType").textContent=(n.type==="translation"?"CHINESE WEBNOVEL TRANSLATION":"ORIGINAL WEBNOVEL")+" · "+String(n.status||"").toUpperCase();
+  document.getElementById("novelType").textContent=(n.type==="translation"?"CHINESE WEBNOVEL TRANSLATION":"ORIGINAL WEBNOVEL")+" · "+String(n.status).toUpperCase();
   document.getElementById("novelDesc").textContent=n.desc||"";
-  document.getElementById("novelMeta").textContent=`${chapters.length} chapters · Last updated ${chapters.length ? chapters[chapters.length-1].date : "—"}`;
+  const cs=n.chapters||[];
+  document.getElementById("novelMeta").textContent=`${cs.length} chapters · Last updated ${cs.length?cs[cs.length-1].date:"—"}`;
   document.getElementById("novelTags").innerHTML=(n.tags||[]).map(t=>`<span class="tag">${escapeHtml(t)}</span>`).join("");
-  document.getElementById("chapters").innerHTML=chapters.length
-    ? chapters.map(c=>`<a class="chapter" href="#read/${encodeURIComponent(n.id)}/${c.n}">
-        <span><strong>Chapter ${c.n}</strong> — ${escapeHtml(c.title)}</span><small>${escapeHtml(c.date||"")}</small>
-      </a>`).join("")
-    : `<div class="empty">No chapters published yet.</div>`;
+  document.getElementById("chapters").innerHTML=cs.length?cs.map(c=>`<a class="chapter" href="#read/${encodeURIComponent(n.id)}/${c.chapter_number}"><span><strong>Chapter ${c.chapter_number}</strong> — ${escapeHtml(c.title)}</span><small>${escapeHtml(c.date)}</small></a>`).join(""):`<div class="empty">No chapters published yet.</div>`;
   showPage("novelPage");
 }
-
 function openChapter(id,num){
-  const n=novels.find(x=>x.id===id);
-  const c=n?.chapters?.find(x=>String(x.n)===String(num));
-  if(!n||!c) return;
+  const n=novels.find(x=>x.id===id), c=n?.chapters?.find(x=>String(x.chapter_number)===String(num)); if(!n||!c)return;
   document.getElementById("readerNovel").textContent=n.title;
   document.getElementById("readerTitle").textContent=c.title;
-  document.getElementById("readerNumber").textContent=`Chapter ${c.n} · ${c.date||""}`;
-  const paragraphs=Array.isArray(c.text)?c.text:[String(c.text||"")];
-  document.getElementById("prose").innerHTML=paragraphs.map((p,i)=>
-    `${i===2?`<div class="scene">✿　✿　✿</div>`:""}<p>${escapeHtml(p)}</p>`
-  ).join("");
-
-  const idx=n.chapters.findIndex(x=>String(x.n)===String(num));
-  const prev=n.chapters[idx-1], next=n.chapters[idx+1];
-  document.getElementById("prev").style.visibility=prev?"visible":"hidden";
-  document.getElementById("next").style.visibility=next?"visible":"hidden";
-  document.getElementById("prev").onclick=()=>prev&&(location.hash=`#read/${encodeURIComponent(n.id)}/${prev.n}`);
-  document.getElementById("next").onclick=()=>next&&(location.hash=`#read/${encodeURIComponent(n.id)}/${next.n}`);
+  document.getElementById("readerNumber").textContent=`Chapter ${c.chapter_number} · ${c.date}`;
+  document.getElementById("prose").innerHTML=renderMarkdown(c.body);
+  const idx=n.chapters.indexOf(c),prev=n.chapters[idx-1],next=n.chapters[idx+1];
+  const pb=document.getElementById("prev"), nb=document.getElementById("next");
+  pb.style.visibility=prev?"visible":"hidden"; nb.style.visibility=next?"visible":"hidden";
+  pb.onclick=()=>prev&&(location.hash=`#read/${encodeURIComponent(n.id)}/${prev.chapter_number}`);
+  nb.onclick=()=>next&&(location.hash=`#read/${encodeURIComponent(n.id)}/${next.chapter_number}`);
   document.getElementById("backNovel").href=`#novel/${encodeURIComponent(n.id)}`;
   showPage("readerPage");
 }
-
-function escapeHtml(value){
-  return String(value??"").replace(/[&<>"']/g, ch=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[ch]));
-}
-
 function route(){
   const h=location.hash.replace("#","");
-  if(h.startsWith("novel/")) openNovel(decodeURIComponent(h.split("/")[1]));
-  else if(h.startsWith("read/")) openChapter(decodeURIComponent(h.split("/")[1]),h.split("/")[2]);
+  if(h.startsWith("novel/"))openNovel(decodeURIComponent(h.split("/")[1]));
+  else if(h.startsWith("read/"))openChapter(decodeURIComponent(h.split("/")[1]),h.split("/")[2]);
   else showPage(["novels","updates","about"].includes(h)?h:"home");
 }
-
 window.addEventListener("hashchange",route);
 loadContent();
 </script>
