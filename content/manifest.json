@@ -1,0 +1,11 @@
+{
+  "novels": [
+    "content/novels/jade-after-snow.json",
+    "content/novels/moonlit-teahouse.json",
+    "content/novels/spring-in-september.json"
+  ],
+  "chapters": [
+    "content/chapters/moonlit-teahouse-2-yumao-publishing-test.md",
+    "content/chapters/{slug}.md"
+  ]
+}
