@@ -3,7 +3,7 @@ title: "No Matter Who Goes Hungry on Fight, It Won’t Be Feather."
 novel: ihdc
 chapter_number: 55
 date: 2026-10-03
-draft: true
+draft: false
 ---
 【System】The enemy’s tower has been destroyed!
 
