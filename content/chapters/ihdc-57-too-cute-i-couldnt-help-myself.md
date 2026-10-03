@@ -3,7 +3,7 @@ title: "Too Cute, I Couldn’t Help Myself"
 novel: ihdc
 chapter_number: 57
 date: 2026-10-03
-draft: true
+draft: false
 translator_notes:
   - number: 1
     note: "大雕 (dà diāo) is the term they’re using here, but if you use the third tone to pronounce the second character (dà diǎo) it means ‘big d*ck.’ TLDR; it’s a d*ck joke."
