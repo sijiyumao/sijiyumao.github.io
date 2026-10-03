@@ -3,7 +3,7 @@ title: "Victory Shall Belong to Us!"
 novel: ihdc
 chapter_number: 11
 date: 2026-10-03
-draft: true
+draft: false
 ---
 Ling Suyu was rendered speechless, but before he could react, his support had already turned around and started scolding the mid-laner: “To the one playing Vampiric Progenitor, you thought of tanking tower damage on low health? Good job, don’t do it again next time.”
 
