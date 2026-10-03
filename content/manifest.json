@@ -34,6 +34,14 @@
       "chapter_number": 4,
       "date": "2026-10-02",
       "draft": false
+    },
+    {
+      "path": "content/chapters/ihdc-5-even-i-can-do-that.md",
+      "title": "Even I Can Do That!",
+      "novel": "ihdc",
+      "chapter_number": 5,
+      "date": "2026-10-03",
+      "draft": true
     }
   ]
 }
