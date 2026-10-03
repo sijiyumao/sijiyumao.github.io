@@ -3,7 +3,7 @@ title: "In the Future, I’ll Protect You"
 novel: ihdc
 chapter_number: 20
 date: 2026-10-03
-draft: true
+draft: false
 ---
 Afterwards, the two duo-queued for five more rounds, and Ling Suyu continuously got MVP for five rounds.
 
