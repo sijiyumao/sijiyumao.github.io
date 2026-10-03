@@ -55,8 +55,15 @@ h1{font-size:clamp(2.6rem,7vw,5rem);margin:14px 0}
 .novel-hero{padding:55px 0;background:linear-gradient(135deg,#fff5f0,#fffaf7)}
 .novel-top{display:grid;grid-template-columns:230px 1fr;gap:35px;align-items:center}.big-cover{height:310px;border-radius:22px;background:linear-gradient(145deg,#f2d5df,#fae9dc);display:flex;align-items:center;justify-content:center;text-align:center;padding:25px;box-shadow:var(--shadow);font-family:var(--serif);font-size:2rem;color:#765762}
 .novel-info h1{font-size:clamp(2.2rem,5vw,4rem);margin:8px 0}.novel-info p{color:var(--muted);max-width:700px;white-space:pre-line}
+.chapter-tools{display:flex;justify-content:space-between;align-items:center;gap:12px;margin:0 0 18px}
+.chapter-search{flex:1;min-width:0;padding:11px 14px;border:1px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);font:inherit;outline:none}
+.chapter-search:focus{border-color:var(--rose)}
+.chapter-sort{padding:11px 14px;border:1px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);font:inherit;cursor:pointer}
 .chapter-list{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden}
-.chapter{display:flex;justify-content:space-between;gap:15px;padding:15px 20px;border-bottom:1px solid var(--line)}.chapter:last-child{border:0}.chapter:hover{background:#fff8fa}.chapter small{color:var(--muted)}
+.chapter{display:grid;grid-template-columns:84px 1fr auto;align-items:center;gap:18px;padding:18px 22px;border-bottom:1px solid var(--line);transition:background .15s ease}.chapter:last-child{border:0}.chapter:hover{background:#fff8fa}
+.chapter-number{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--pink-dark)}
+.chapter-title{font-family:var(--serif);font-size:1.05rem;color:var(--ink)}
+.chapter small{color:var(--muted);white-space:nowrap}.chapter-empty{padding:26px;text-align:center;color:var(--muted)}
 .novel-details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 28px;max-width:700px;margin:24px 0 0;padding:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .novel-detail{font-size:.86rem;color:var(--muted)}
 .novel-detail strong{display:block;margin-bottom:2px;color:var(--ink);font-size:.68rem;text-transform:uppercase;letter-spacing:.12em}
@@ -71,7 +78,9 @@ footer{padding:40px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 .page{display:none}.page.active{display:block}
 @media(max-width:750px){
  nav{display:none;position:absolute;left:0;right:0;top:72px;background:var(--bg);padding:15px 4%;border-bottom:1px solid var(--line);flex-direction:column;gap:10px}
- nav.open{display:flex}.menu{display:block}.grid{grid-template-columns:1fr}.novel-top,.about{grid-template-columns:1fr}.big-cover{width:min(230px,100%);margin:auto}.section{padding:50px 0}.hero{padding:65px 0}.novel-details{grid-template-columns:1fr;gap:10px}\n.reader{width:min(92%,700px);padding:48px 0}.reader-head{margin-bottom:38px}.prose{font-size:1.08rem;line-height:1.95}.reader-nav{grid-template-columns:1fr 1fr}.reader-nav #backNovel{grid-column:1/-1;grid-row:2;justify-self:center}.reader-nav .btn{padding:10px 14px;font-size:.88rem}
+ nav.open{display:flex}.menu{display:block}.grid{grid-template-columns:1fr}.novel-top,.about{grid-template-columns:1fr}.big-cover{width:min(230px,100%);margin:auto}.section{padding:50px 0}.hero{padding:65px 0}.novel-details{grid-template-columns:1fr;gap:10px}
+.chapter-tools{align-items:stretch;flex-direction:column}
+.chapter{grid-template-columns:1fr auto;gap:5px 12px;padding:16px 18px}.chapter-number{grid-column:1}.chapter-title{grid-column:1}.chapter small{grid-column:2;grid-row:1/3;align-self:center}\n.reader{width:min(92%,700px);padding:48px 0}.reader-head{margin-bottom:38px}.prose{font-size:1.08rem;line-height:1.95}.reader-nav{grid-template-columns:1fr 1fr}.reader-nav #backNovel{grid-column:1/-1;grid-row:2;justify-self:center}.reader-nav .btn{padding:10px 14px;font-size:.88rem}
 }
 </style>
 </head>
@@ -147,7 +156,7 @@ footer{padding:40px 0;border-top:1px solid var(--line);color:var(--muted);font-s
     <div id="novelCover" class="big-cover"></div>
     <div class="novel-info"><div id="novelType" class="kicker"></div><h1 id="novelTitle"></h1><div id="novelTags" class="tags"></div><p id="novelDesc"></p><div id="novelDetails" class="novel-details"></div><div id="novelTranslatorNote" class="novel-translator-note"></div><div id="novelMeta" class="meta"></div></div>
   </div></div>
-  <div class="section"><div class="container" style="max-width:850px"><div class="section-head"><div><div class="kicker">Read</div><h2>Chapters</h2></div></div><div id="chapters" class="chapter-list"></div></div></div>
+  <div class="section"><div class="container" style="max-width:850px"><div class="section-head"><div><div class="kicker">Read</div><h2>Chapters</h2></div></div><div id="chapterTools" class="chapter-tools" hidden><input id="chapterSearch" class="chapter-search" type="search" placeholder="Find a chapter…" aria-label="Find a chapter"><select id="chapterSort" class="chapter-sort" aria-label="Chapter order"><option value="oldest">Oldest first</option><option value="newest">Newest first</option></select></div><div id="chapters" class="chapter-list"></div></div></div>
 </section>
 
 <section id="readerPage" class="page">
@@ -296,7 +305,15 @@ function openNovel(id){
   const cs=n.chapters||[];
   document.getElementById("novelMeta").textContent=`${cs.length} ${cs.length===1?"chapter":"chapters"} · Last updated ${cs.length?cs[cs.length-1].date:"—"}`;
   document.getElementById("novelTags").innerHTML=(n.tags||[]).map(t=>`<span class="tag">${escapeHtml(t)}</span>`).join("");
-  document.getElementById("chapters").innerHTML=cs.length?cs.map(c=>`<a class="chapter" href="#read/${encodeURIComponent(n.id)}/${c.chapter_number}"><span><strong>Chapter ${c.chapter_number}</strong> — ${escapeHtml(c.title)}</span><small>${escapeHtml(c.date)}</small></a>`).join(""):`<div class="empty">No chapters published yet.</div>`;
+  const chapterTools=document.getElementById("chapterTools"), chapterSearch=document.getElementById("chapterSearch"), chapterSort=document.getElementById("chapterSort");
+  chapterTools.hidden=cs.length<8; chapterSearch.value=""; chapterSort.value="oldest";
+  function renderChapterList(){
+    const q=chapterSearch.value.trim().toLowerCase();
+    let shown=cs.filter(c=>!q||String(c.chapter_number).includes(q)||String(c.title).toLowerCase().includes(q));
+    if(chapterSort.value==="newest") shown=[...shown].reverse();
+    document.getElementById("chapters").innerHTML=shown.length?shown.map(c=>`<a class="chapter" href="#read/${encodeURIComponent(n.id)}/${c.chapter_number}"><span class="chapter-number">Chapter ${c.chapter_number}</span><span class="chapter-title">${escapeHtml(c.title)}</span><small>${escapeHtml(c.date)}</small></a>`).join(""):`<div class="chapter-empty">No chapters match your search.</div>`;
+  }
+  chapterSearch.oninput=renderChapterList; chapterSort.onchange=renderChapterList; renderChapterList();
   showPage("novelPage");
 }
 function openChapter(id,num){
