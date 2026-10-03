@@ -3,7 +3,7 @@ title: "Have You No Respect for Chivalry?!"
 novel: ihdc
 chapter_number: 7
 date: 2026-10-03
-draft: true
+draft: false
 ---
 《Glorious Heroes》 had 9 tiers, and from bottom to top they were Novice, Apprentice, Adventurer, Newcomer, Bounty Hunter, Fabled, Valiant, Famed, and Glorious Hero.
 
