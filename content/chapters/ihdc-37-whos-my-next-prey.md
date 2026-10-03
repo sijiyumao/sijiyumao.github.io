@@ -3,7 +3,7 @@ title: "Who’s My Next Prey?"
 novel: ihdc
 chapter_number: 37
 date: 2026-10-03
-draft: true
+draft: false
 translator_notes:
   - number: 1
     note: "from now on, when it’s just casual chatter between Fight’s members, I’ll use Yumao instead of Feather, since it sounds less stiff…"
