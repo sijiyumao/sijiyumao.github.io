@@ -3,7 +3,7 @@ title: "Whoosh!"
 novel: ihdc
 chapter_number: 66
 date: 2026-10-03
-draft: true
+draft: false
 translator_notes:
   - number: 1
     note: "Ling Suyu’s misunderstanding here is the result of 独 (du, meaning egotistical, self-centered, lone) and 毒 (du, meaning poison) being homophones"
