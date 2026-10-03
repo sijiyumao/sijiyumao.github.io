@@ -317,7 +317,12 @@ function renderRecent(){
 }
 function openNovel(id){
   const n=novels.find(x=>x.id===id); if(!n)return;
-  document.getElementById("novelCover").textContent=n.title;
+  const novelCover=document.getElementById("novelCover");
+  novelCover.textContent=n.cover?"":n.title;
+  novelCover.style.backgroundImage=n.cover?`url("${String(n.cover).replace(/"/g,"%22")}")`:"";
+  novelCover.style.backgroundSize=n.cover?"cover":"";
+  novelCover.style.backgroundPosition=n.cover?"center":"";
+  novelCover.style.backgroundRepeat=n.cover?"no-repeat":"";
   document.getElementById("novelTitle").textContent=n.title;
   document.getElementById("novelType").textContent=(n.type==="translation"?"CHINESE WEBNOVEL TRANSLATION":"ORIGINAL WEBNOVEL")+" · "+String(n.status).toUpperCase();
   document.getElementById("novelDesc").textContent=n.desc||"";
