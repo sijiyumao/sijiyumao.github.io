@@ -3,7 +3,7 @@ title: "We’re All Esports Players, but You’re Heartless!"
 novel: ihdc
 chapter_number: 13
 date: 2026-10-03
-draft: true
+draft: false
 ---
 This Weibo post from UH was sent not too long ago, and so far had only been seen by fans, all echoing their support:
 
