@@ -425,7 +425,7 @@
       "novel": "ihdc",
       "chapter_number": 57,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-58-feathers-finally-remembered-his-weibo-password.md",
@@ -433,7 +433,7 @@
       "novel": "ihdc",
       "chapter_number": 58,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-59-for-fight.md",
@@ -441,7 +441,7 @@
       "novel": "ihdc",
       "chapter_number": 59,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-6-screenshot-for-the-record.md",
@@ -457,7 +457,7 @@
       "novel": "ihdc",
       "chapter_number": 60,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-61-a-pretty-strange-feeling.md",
@@ -465,7 +465,7 @@
       "novel": "ihdc",
       "chapter_number": 61,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-62-youre-playing-with-fire.md",
@@ -473,7 +473,7 @@
       "novel": "ihdc",
       "chapter_number": 62,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-63-youre-so-in-sync-trying-to-duet.md",
@@ -481,7 +481,7 @@
       "novel": "ihdc",
       "chapter_number": 63,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-64-a-corpse-is-trying-to-solo-carry.md",
@@ -489,7 +489,7 @@
       "novel": "ihdc",
       "chapter_number": 64,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-65-dark-raven.md",
@@ -497,7 +497,7 @@
       "novel": "ihdc",
       "chapter_number": 65,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-66-whoosh.md",
@@ -505,7 +505,7 @@
       "novel": "ihdc",
       "chapter_number": 66,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-67-this-jungles-mine.md",
@@ -513,7 +513,7 @@
       "novel": "ihdc",
       "chapter_number": 67,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-7-have-you-no-respect-for-chivalry.md",
