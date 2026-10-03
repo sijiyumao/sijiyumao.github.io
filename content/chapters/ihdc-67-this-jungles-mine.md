@@ -3,7 +3,7 @@ title: "This Jungle’s Mine"
 novel: ihdc
 chapter_number: 67
 date: 2026-10-03
-draft: true
+draft: false
 translator_notes:
   - number: 1
     note: "the actual expression used here is 放了个太平洋 (fang le ge tai ping yang), which literally means ‘let out the Pacific Ocean,’ an exaggerated version of the saying ‘letting out water,’ which means to pull your punches/go easy on your opponent. I wasn’t quite sure how to translate the original into English, so I just went with an equivalent expression."
