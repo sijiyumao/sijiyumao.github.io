@@ -3,7 +3,7 @@ title: "You Look Good When You Smile."
 novel: ihdc
 chapter_number: 19
 date: 2026-10-03
-draft: true
+draft: false
 ---
 After Tang Yu’an finished off the enemy mid-laner, he confidently strutted downwards.
 
