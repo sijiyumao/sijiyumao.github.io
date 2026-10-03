@@ -136,12 +136,12 @@ collections:
         date_format: "YYYY-MM-DD"
         time_format: false
         format: "YYYY-MM-DD"
-      - label: "Draft"
+      - label: "Hide from Public Site"
         name: "draft"
         widget: "boolean"
         default: false
         required: false
-        hint: "Turn this on to keep the chapter hidden from the public site."
+        hint: "ON = saved in Admin but hidden from readers. OFF = visible on the public site after saving. Decap's Publish button saves your changes to GitHub."
       - label: "Translator's Notes"
         name: "translator_notes"
         widget: "list"
@@ -195,12 +195,12 @@ collections:
         date_format: "YYYY-MM-DD"
         time_format: false
         format: "YYYY-MM-DD"
-      - label: "Draft"
+      - label: "Hide from Public Site"
         name: "draft"
         widget: "boolean"
         default: false
         required: false
-        hint: "Turn this on to keep the chapter hidden from the public site."
+        hint: "ON = saved in Admin but hidden from readers. OFF = visible on the public site after saving. Decap's Publish button saves your changes to GitHub."
       - label: "Translator's Notes"
         name: "translator_notes"
         widget: "list"
@@ -254,12 +254,12 @@ collections:
         date_format: "YYYY-MM-DD"
         time_format: false
         format: "YYYY-MM-DD"
-      - label: "Draft"
+      - label: "Hide from Public Site"
         name: "draft"
         widget: "boolean"
         default: false
         required: false
-        hint: "Turn this on to keep the chapter hidden from the public site."
+        hint: "ON = saved in Admin but hidden from readers. OFF = visible on the public site after saving. Decap's Publish button saves your changes to GitHub."
       - label: "Translator's Notes"
         name: "translator_notes"
         widget: "list"
