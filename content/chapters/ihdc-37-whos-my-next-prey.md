@@ -12,6 +12,8 @@ translator_notes:
 
 that are similar to subreddits."
   - number: 3
+    note: "羽语还休 (yu yu huan xiu), which uses a combination of the last character of Ling Suyu’s name ‘yu’ (羽), which means feather, and the second character of Tang Yu’an’s name ‘yu’ (语), which can mean language/words etc."
+  - number: 4
     note: "语羽多欢 (yu yu duo huan), same deal as the last super topic name"
 ---
 After the reporter and the photographer accompanying her politely bid farewell to the Fight members in the lobby, they left the club building.
@@ -142,9 +144,7 @@ better than this? Of course I’m shipping them! AnYu is a lock, go for the Spri
 
 【We’ve gotta start a CP super topic [^2] for them, right?】
 
-【Looks like there’s already one—it’s called “Feathered Words For A Rest”[translator’s
-
-note: 羽语还休 (yu yu huan xiu), which uses a combination of the last character of Ling Suyu’s name ‘yu’ (羽), which means feather, and the second character of Tang Yu’an’s name ‘yu’ (语), which can mean language/words etc.]】
+【Looks like there’s already one—it’s called “Feathered Words For A Rest”[^3]】
 
 【What kind of cult is “Feathered Words”? It’s definitely AnYu! An “iceberg uke” is
 
@@ -152,7 +152,7 @@ just too alluring!】
 
 【There’s already a super topic with the name “AnYu”, and I think there’s also one
 
-called “Feathered Words Bring Joy [^3].” Which one is it, girls?】
+called “Feathered Words Bring Joy[^4].” Which one is it, girls?】
 
 【Whoa! Are you guys that fast? Whatever, I’ll just follow them all!】
 
