@@ -3,7 +3,7 @@ title: "The Captain’s Right"
 novel: ihdc
 chapter_number: 43
 date: 2026-10-03
-draft: true
+draft: false
 ---
 Ah-Mu: “As we can see now, both teams’ heroes have entered the map! On Fight’s side, the marksman is Candy Witch, and the support is Mobile Artillery. This bottom lane combo is pretty rare—at least as far as I can recall, Fight is the first team to dare to pick this lineup in a professional match!”
 
