@@ -281,7 +281,7 @@
       "novel": "ihdc",
       "chapter_number": 40,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-41-overcoming-countless-obstacles-just-to-arrive-by-your-side.md",
@@ -289,7 +289,7 @@
       "novel": "ihdc",
       "chapter_number": 41,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-42-i-can-carry.md",
@@ -297,7 +297,7 @@
       "novel": "ihdc",
       "chapter_number": 42,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-43-the-captains-right.md",
@@ -305,7 +305,7 @@
       "novel": "ihdc",
       "chapter_number": 43,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-44-if-you-dare-to-release-it-we-dare-to-pick-it.md",
@@ -313,7 +313,7 @@
       "novel": "ihdc",
       "chapter_number": 44,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-45-the-captains-bullshitting-again.md",
@@ -321,7 +321,7 @@
       "novel": "ihdc",
       "chapter_number": 45,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-46-i-can-take-him.md",
