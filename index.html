@@ -78,8 +78,8 @@ h1{font-size:clamp(2.6rem,7vw,5rem);margin:14px 0}
 .reader{max-width:700px;margin:auto;padding:72px 0 64px}.reader-head{text-align:center;margin-bottom:52px}.reader-head:after{content:"❀  ·  ❀";display:block;margin-top:28px;color:var(--jade);font-family:var(--serif);font-size:.9rem;letter-spacing:.18em}.reader-head .kicker{font-size:.7rem}.reader-head h1{font-size:clamp(2.25rem,5vw,3.65rem);margin:10px 0 12px}.reader-head p{color:var(--muted);margin:0;font-size:.9rem}
 .prose{font-family:var(--serif);font-size:1.15rem;line-height:2.05;letter-spacing:.008em}.prose p{margin:0 0 1.65em}.prose h2{font-size:1.75rem;margin:2.4em 0 .8em}.prose h3{font-size:1.35rem;margin:2em 0 .7em}.prose blockquote{margin:2em 0;padding:4px 0 4px 22px;border-left:3px solid var(--rose);color:#6f6260;font-style:italic}.prose a{color:var(--pink-dark);text-decoration:underline;text-underline-offset:3px}.prose strong{font-weight:700}.footnote-ref{font-family:var(--sans);font-size:.68em;vertical-align:super;line-height:0;margin-left:2px}.footnote-ref button{appearance:none;border:0;background:none;padding:0;margin:0;color:var(--pink-dark);font:inherit;font-weight:700;cursor:pointer}.footnote-ref button:hover{text-decoration:underline}.translator-notes{margin-top:58px;padding-top:30px;border-top:1px solid var(--line);font-family:var(--sans);font-size:.9rem;line-height:1.75;color:var(--muted)}.translator-notes h2{font-family:var(--serif);font-size:1.45rem;color:var(--ink);margin:0 0 18px}.translator-notes ol{margin:0;padding-left:1.5rem}.translator-notes li{padding-left:.3rem;margin:0 0 12px}.translator-notes li::marker{color:var(--pink-dark);font-weight:700}.translator-notes p{display:inline;margin:0}.footnote-back{appearance:none;border:0;background:none;padding:0;margin-left:6px;color:var(--jade);font:inherit;font-weight:700;cursor:pointer}.footnote-back:hover{color:var(--pink-dark)}.prose .scene{font-size:.9rem;text-align:center;color:var(--pink);letter-spacing:.25em;margin:35px 0}
 .reader-nav{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px;border-top:1px solid var(--line);margin-top:58px;padding-top:28px}.reader-nav #prev{justify-self:start}.reader-nav #next{justify-self:end}.reader-nav #backNovel{justify-self:center}
-.about{display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:start}.note{background:var(--cream);border-radius:22px;padding:28px;border:1px solid #f2e2ca}.note h3{margin-top:0}
-footer{padding:40px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem;text-align:center}
+.about{display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:start}.about p{color:var(--muted)}.note{background:var(--cream);border-radius:22px;padding:28px;border:1px solid #f2e2ca}.note h3{margin-top:0}.note p{margin-bottom:0}.support-link{display:inline-flex;align-items:center;gap:7px;margin-top:18px;color:var(--pink-dark);font-weight:700}.support-link:hover{text-decoration:underline}.translation-notice{margin-top:30px;padding-top:24px;border-top:1px solid var(--line);font-size:.9rem;color:var(--muted)}
+footer{padding:34px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.82rem;text-align:center}.footer-inner{display:flex;flex-direction:column;align-items:center;gap:7px}.footer-links{display:flex;align-items:center;justify-content:center;gap:10px}.footer-links a:hover{color:var(--pink-dark)}.admin-link{opacity:.65}
 .empty{text-align:center;color:var(--muted);padding:45px;grid-column:1/-1}
 .page{display:none}.page.active{display:block}
 @media(max-width:750px){
@@ -148,11 +148,18 @@ footer{padding:40px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 <section id="about" class="page">
   <div class="section">
     <div class="container about">
-      <div><div class="kicker">Welcome, reader</div><h2>About Yumao Novels</h2>
-        <p>Yumao Novels is a personal reading space for Chinese webnovel translations and original fiction. Replace this text with your own introduction, translation notes, credits, or contact information.</p>
-        <p>For translations, you can also use this space for translator notes, source acknowledgements, update schedules, and content warnings. You can customize this section whenever you are ready to publish.</p>
+      <div>
+        <div class="kicker">Welcome, reader</div>
+        <h2>About Yumao Novels</h2>
+        <p>Yumao Novels is a personal translation space created by <strong>sijiyumao (思及羽猫)</strong>, dedicated primarily to sharing English fan translations of Chinese webnovels.</p>
+        <p>I hope to make stories I enjoy more accessible to English-speaking readers while keeping readers connected to the original works and their authors. Original publication sources are linked on each novel page whenever available.</p>
+        <div class="translation-notice"><strong>Translation notice</strong><br>Translations on Yumao Novels are unofficial fan translations. All rights to the original works belong to their respective authors and publishers. Please support the original works through the linked official sources.</div>
       </div>
-      <div class="note"><h3>✿ A note from the author</h3><p>“Welcome to Yumao Novels. Stay for a chapter, stay for a story, and make yourself at home.”</p></div>
+      <div class="note">
+        <h3>✿ Support Yumao Novels</h3>
+        <p>Yumao Novels is a personal project. If you enjoy my translations and would like to support my work, you can leave an optional tip on Ko-fi. Thank you for reading!</p>
+        <a class="support-link" href="https://ko-fi.com/siyu050617" target="_blank" rel="noopener noreferrer">Visit my Ko-fi →</a>
+      </div>
     </div>
   </div>
 </section>
@@ -175,7 +182,10 @@ footer{padding:40px 0;border-top:1px solid var(--line);color:var(--muted);font-s
   <button type="button" id="backToTop" class="back-to-top" aria-label="Back to top">↑ Top</button>
 </section>
 </main>
-<footer>Yumao Novels · stories, translations & little worlds 🌸 · <a href="./admin/">Admin</a></footer>
+<footer><div class="container footer-inner">
+  <div>Yumao Novels · Chinese webnovel translations by sijiyumao (思及羽猫) 🌸</div>
+  <div class="footer-links"><a href="https://ko-fi.com/siyu050617" target="_blank" rel="noopener noreferrer">Ko-fi</a><span>·</span><a class="admin-link" href="./admin/">Admin</a></div>
+</div></footer>
 
 <script>
 let novels=[], filter="all";
