@@ -1,5 +1,5 @@
 ---
-title: "Huh? It’s Just a Practice Match? Then There’s No Problem."
+title: Huh? It’s Just a Practice Match? Then There’s No Problem.
 novel: ihdc
 chapter_number: 31
 date: 2026-10-03
@@ -303,7 +303,7 @@ Who are you calling a softie?!
 
 Dou Jiayan: “Wow, and I wonder who was the one stirring stuff up in the first place?”
 
-“The main thing is…” Mo Xiaoyun pointed out the key point, “One second we heard Feiyu hesitating, and the next we saw him type ‘got it’. Feather, does your hand have a mind of its own? That’s hilarious.”
+“The main thing is…” Mo Xiaoyun pointed out the key point, “One second we heard Yumao hesitating, and the next we saw him type ‘got it’. Feather, does your hand have a mind of its own? That’s hilarious.”
 
 Ling Suyu: =_= Not at all! He just didn’t want to waste time typing!
 
