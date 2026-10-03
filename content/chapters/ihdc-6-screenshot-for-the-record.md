@@ -1,5 +1,5 @@
 ---
-title: "Screenshot For the Record!"
+title: Screenshot For the Record!
 novel: ihdc
 chapter_number: 6
 date: 2026-10-03
@@ -93,7 +93,7 @@ He hesitated for a moment, before ultimately choosing to go inside.
 
 He’d walked this path many times before, but as expected, the most familiar place to him was the internet café.
 
-Similarly to the past, he booked a small private room, locking the door behind him once he’d entered. He turned on the PC, adjusted the chair’s height, smoothly double￾clicked a certain icon titled 《Glorious Heroes》, logged into the game, proficiently clicked on “ranked match”, and waited for the match-making…
+Similarly to the past, he booked a small private room, locking the door behind him once he’d entered. He turned on the PC, adjusted the chair’s height, smoothly double-clicked a certain icon titled 《Glorious Heroes》, logged into the game, proficiently clicked on “ranked match”, and waited for the match-making…
 
 Wait a minute?!
 
