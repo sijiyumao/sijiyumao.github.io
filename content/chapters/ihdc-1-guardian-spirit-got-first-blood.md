@@ -23,7 +23,7 @@ Now, the 20-year-old Ling Suyu would soon arrive at the end of his contract  wi
 
 As the applause faded, the announcer once again started: 【The upcoming match is between UH and YJ! Both teams are popular candidates for this competition’s championship, and have traded blows on countless other occasions! Let us wait and see, will UH be able to avenge themselves today, or will YJ’s legend continue!】
 
-\[Well then, before we begin today’s match, let us first welcome members from both teams to share their current thoughts with us!]
+【Well then, before we begin today’s match, let us first welcome members from both teams to share their current thoughts with us!】
 
 As the announcer said this, he turned and walked towards YJ. 
 
@@ -65,8 +65,6 @@ It wasn’t that Ling Suyu’s response was brilliant, but rather that YJ’s un
 
 Nevertheless, this was an e-sports competition, and in the end everything relied on strength.
 
-
-
 【Through blood and sweat, who will be victorious! Welcome to the professional competition livestream of “Glorious Heroes”’s White Fox Cup! I’m commentator Ah-Mu!】
 
 【I’m your commentator ZhiZhi~】
@@ -84,8 +82,6 @@ Ah-Mu: 【Unfortunately, UH’s starter marksman was banned from competing today
 ZhiZhi: 【Changing their main damage dealer right before the competition will likely affect UH’s performance today, it’s a bit worrying!】
 
 Ah-Mu: 【The match is about to begin, let’s not delay any longer, and see how this plays out!】
-
-
 
 Alongside the commentators’ words, the livestream screen switched to the game menu. “The first match of the White Fox Cup is about to begin!”
 
@@ -190,8 +186,6 @@ Those who really understood him knew that he never started a fight he couldn’t
 Just now, he had calculated that the enemy’s marksman couldn’t escape from his position before dashing forwards. 
 
 As the match continued, Ma Mingxi’s Netherworld Shadow revived and quickly returned to his lane, and Ling Suyu’s Guardian Spirit also finished healing and returned to the frontlines. 
-
-
 
 In Fight’s team practice room, Fight’s mid-laner Dou Jiayan left his seat to get some water. As he passed by his captain’s seat, he saw the screen out of the corner of his eye and couldn’t help asking: “Are you watching the White Fox Cup too?”
 
