@@ -3,7 +3,7 @@ title: "I’d Have Knocked Your Head Off!"
 novel: ihdc
 chapter_number: 9
 date: 2026-10-03
-draft: true
+draft: false
 ---
 “beefing with whoever steals marksman” was a fan of UH’s.
 
