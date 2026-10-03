@@ -3,7 +3,7 @@ title: "Hubby, You’re So Cool! Carry Me Up the Ranks!"
 novel: ihdc
 chapter_number: 30
 date: 2026-10-03
-draft: true
+draft: false
 ---
 After the post-game review, everyone started practicing in solo queues.
 
