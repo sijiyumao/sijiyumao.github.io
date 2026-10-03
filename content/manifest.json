@@ -177,7 +177,7 @@
       "novel": "ihdc",
       "chapter_number": 29,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-3-double-kill-peerless.md",
@@ -193,7 +193,7 @@
       "novel": "ihdc",
       "chapter_number": 30,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-31-huh-its-just-a-practice-match-then-theres-no-problem.md",
@@ -201,7 +201,7 @@
       "novel": "ihdc",
       "chapter_number": 31,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-32-its-all-about-seizing-the-right-moment.md",
@@ -209,7 +209,7 @@
       "novel": "ihdc",
       "chapter_number": 32,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-33-im-not-dead-yet-so-dont-run-off.md",
@@ -217,7 +217,7 @@
       "novel": "ihdc",
       "chapter_number": 33,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-34-ximing-ma.md",
@@ -225,7 +225,7 @@
       "novel": "ihdc",
       "chapter_number": 34,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-35-its-so-annoying-when-they-run-off-after-winning.md",
@@ -233,7 +233,7 @@
       "novel": "ihdc",
       "chapter_number": 35,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-36-someone-like-the-captain.md",
@@ -241,7 +241,7 @@
       "novel": "ihdc",
       "chapter_number": 36,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-37-whos-my-next-prey.md",
@@ -249,7 +249,7 @@
       "novel": "ihdc",
       "chapter_number": 37,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-38-go-feather.md",
@@ -257,7 +257,7 @@
       "novel": "ihdc",
       "chapter_number": 38,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-39-kill-kill-kill.md",
@@ -265,7 +265,7 @@
       "novel": "ihdc",
       "chapter_number": 39,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-4-thrilling.md",
