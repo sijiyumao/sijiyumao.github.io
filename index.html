@@ -62,7 +62,7 @@ h1{font-size:clamp(2.6rem,7vw,5rem);margin:14px 0}
 .chapter-list{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden}
 .chapter{display:grid;grid-template-columns:84px 1fr auto;align-items:center;gap:18px;padding:18px 22px;border-bottom:1px solid var(--line);transition:background .15s ease}.chapter:last-child{border:0}.chapter:hover{background:#fff8fa}
 .chapter-number{font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--pink-dark)}
-.chapter-title{font-family:var(--serif);font-size:1.05rem;color:var(--ink)}
+.chapter-title{font-family:var(--serif);font-size:1.05rem;color:var(--ink)}.chapter-read-badge{display:inline-flex;align-items:center;margin-left:8px;padding:2px 7px;border-radius:999px;background:var(--jade-soft);color:var(--jade);font:700 .62rem var(--sans);letter-spacing:.04em;text-transform:uppercase;vertical-align:middle}.continue-reading{display:none;align-items:center;gap:10px;margin:20px 0 0}.continue-reading.visible{display:flex}.continue-reading small{color:var(--muted)}
 .chapter small{color:var(--muted);white-space:nowrap}.chapter-empty{padding:26px;text-align:center;color:var(--muted)}
 .novel-details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px 28px;max-width:700px;margin:24px 0 0;padding:20px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
 .novel-detail{font-size:.86rem;color:var(--muted)}
@@ -168,7 +168,7 @@ footer{padding:34px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 <section id="novelPage" class="page">
   <div class="novel-hero"><div class="container novel-top">
     <div id="novelCover" class="big-cover"></div>
-    <div class="novel-info"><div id="novelType" class="kicker"></div><h1 id="novelTitle"></h1><div id="novelTags" class="tags"></div><p id="novelDesc"></p><div id="novelDetails" class="novel-details"></div><div id="novelTranslatorNote" class="novel-translator-note"></div><div id="novelMeta" class="meta"></div></div>
+    <div class="novel-info"><div id="novelType" class="kicker"></div><h1 id="novelTitle"></h1><div id="novelTags" class="tags"></div><div id="continueReading" class="continue-reading"></div><p id="novelDesc"></p><div id="novelDetails" class="novel-details"></div><div id="novelTranslatorNote" class="novel-translator-note"></div><div id="novelMeta" class="meta"></div></div>
   </div></div>
   <div class="section"><div class="container" style="max-width:850px"><div class="section-head"><div><div class="kicker">Read</div><h2>Chapters</h2></div></div><div id="chapterTools" class="chapter-tools" hidden><input id="chapterSearch" class="chapter-search" type="search" placeholder="Find a chapter…" aria-label="Find a chapter"><select id="chapterSort" class="chapter-sort" aria-label="Chapter order"><option value="oldest">Oldest first</option><option value="newest">Newest first</option></select></div><div id="chapters" class="chapter-list"></div></div></div>
 </section>
@@ -366,6 +366,16 @@ function openNovel(id){
   translatorNote.innerHTML=n.translator_note?`<strong>Translator's note</strong><br>${escapeHtml(n.translator_note).replace(/\n/g,"<br>")}`:"";
   translatorNote.style.display=n.translator_note?"block":"none";
   const cs=n.chapters||[];
+  const continueBox=document.getElementById("continueReading");
+  const lastRead=localStorage.getItem("yumao-last-read:"+n.id);
+  const lastChapter=cs.find(ch=>String(ch.chapter_number)===String(lastRead));
+  if(lastChapter){
+    continueBox.innerHTML=`<a class="btn" href="#read/${encodeURIComponent(n.id)}/${lastChapter.chapter_number}">Continue Reading →</a><small>Chapter ${lastChapter.chapter_number}</small>`;
+    continueBox.classList.add("visible");
+  }else{
+    continueBox.innerHTML="";
+    continueBox.classList.remove("visible");
+  }
   document.getElementById("novelMeta").textContent=`${cs.length} ${cs.length===1?"chapter":"chapters"} · Last updated ${cs.length?cs[cs.length-1].date:"—"}`;
   document.getElementById("novelTags").innerHTML=(n.tags||[]).map(t=>`<span class="tag">${escapeHtml(t)}</span>`).join("");
   const chapterTools=document.getElementById("chapterTools"), chapterSearch=document.getElementById("chapterSearch"), chapterSort=document.getElementById("chapterSort");
@@ -374,12 +384,13 @@ function openNovel(id){
     const q=chapterSearch.value.trim().toLowerCase();
     let shown=cs.filter(c=>!q||String(c.chapter_number).includes(q)||String(c.title).toLowerCase().includes(q));
     if(chapterSort.value==="newest") shown=[...shown].reverse();
-    document.getElementById("chapters").innerHTML=shown.length?shown.map(c=>`<a class="chapter" href="#read/${encodeURIComponent(n.id)}/${c.chapter_number}"><span class="chapter-number">Chapter ${c.chapter_number}</span><span class="chapter-title">${escapeHtml(c.title)}</span><small>${escapeHtml(c.date)}</small></a>`).join(""):`<div class="chapter-empty">No chapters match your search.</div>`;
+    document.getElementById("chapters").innerHTML=shown.length?shown.map(c=>{const read=localStorage.getItem(`yumao-read:${n.id}:${c.chapter_number}`)==="1";return `<a class="chapter" href="#read/${encodeURIComponent(n.id)}/${c.chapter_number}"><span class="chapter-number">Chapter ${c.chapter_number}</span><span class="chapter-title">${escapeHtml(c.title)}${read?`<span class="chapter-read-badge">Read</span>`:""}</span><small>${escapeHtml(c.date)}</small></a>`;}).join(""):`<div class="chapter-empty">No chapters match your search.</div>`;
   }
   chapterSearch.oninput=renderChapterList; chapterSort.onchange=renderChapterList; renderChapterList();
   showPage("novelPage");
 }
-let readerFontSize=1.15;
+let readerFontSize=Number(localStorage.getItem("yumao-reader-font-size"))||1.15;
+if(readerFontSize<.95||readerFontSize>1.45) readerFontSize=1.15;
 function applyReaderFontSize(){
   document.getElementById("prose").style.fontSize=readerFontSize+"rem";
 }
@@ -401,9 +412,10 @@ function updateReadingProgress(){
   progress.style.width=(pct*100)+"%";
   topButton.classList.toggle("visible",window.scrollY>700);
 }
-document.getElementById("fontDown").onclick=()=>{readerFontSize=Math.max(.95,readerFontSize-.1);applyReaderFontSize();};
-document.getElementById("fontReset").onclick=()=>{readerFontSize=1.15;applyReaderFontSize();};
-document.getElementById("fontUp").onclick=()=>{readerFontSize=Math.min(1.45,readerFontSize+.1);applyReaderFontSize();};
+function saveReaderFontSize(){localStorage.setItem("yumao-reader-font-size",String(readerFontSize));applyReaderFontSize();}
+document.getElementById("fontDown").onclick=()=>{readerFontSize=Math.max(.95,readerFontSize-.1);saveReaderFontSize();};
+document.getElementById("fontReset").onclick=()=>{readerFontSize=1.15;saveReaderFontSize();};
+document.getElementById("fontUp").onclick=()=>{readerFontSize=Math.min(1.45,readerFontSize+.1);saveReaderFontSize();};
 document.getElementById("backToTop").onclick=()=>window.scrollTo({top:0,behavior:"smooth"});
 window.addEventListener("scroll",updateReadingProgress,{passive:true});
 window.addEventListener("resize",updateReadingProgress);
@@ -434,6 +446,8 @@ async function openChapter(id,num){
   nb.onclick=()=>next&&(location.hash=`#read/${encodeURIComponent(n.id)}/${next.chapter_number}`);
   document.getElementById("backNovel").href=`#novel/${encodeURIComponent(n.id)}`;
   setChapterLikeButton(n.id,c.chapter_number);
+  localStorage.setItem(`yumao-read:${n.id}:${c.chapter_number}`,"1");
+  localStorage.setItem("yumao-last-read:"+n.id,String(c.chapter_number));
   showPage("readerPage");
   try{
     let full=chapterCache.get(c.path);
