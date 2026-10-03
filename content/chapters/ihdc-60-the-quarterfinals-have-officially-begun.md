@@ -3,7 +3,7 @@ title: "The Quarterfinals Have Officially Begun!"
 novel: ihdc
 chapter_number: 60
 date: 2026-10-03
-draft: true
+draft: false
 translator_notes:
   - number: 1
     note: "破釜沉舟 (pò fǔ chén zhōu), or “break the cooking pots and sink the ships.” It is a saying that refers to an event that occurred during the Battle of Julu during the Three Kingdoms period. Recorded in Sima Qian’s Records of the Great Historian, legendary Shu-Han general and war hero Xiang Yu, upon crossing the Yellow River, ordered all boats sunk, camp lodgings burnt, and caldrons broken. It was a move that showed every man in the army entered the battle prepared to die and never return, having cut off all their routes of retreat."
