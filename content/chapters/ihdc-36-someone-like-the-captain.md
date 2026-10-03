@@ -3,7 +3,7 @@ title: "Someone Like the Captain"
 novel: ihdc
 chapter_number: 36
 date: 2026-10-03
-draft: true
+draft: false
 ---
 That night, both Fight and YJ reviewed their matches until late into the night.
 
