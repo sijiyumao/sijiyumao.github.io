@@ -80,7 +80,7 @@ h1{font-size:clamp(2.6rem,7vw,5rem);margin:14px 0}
 .back-to-top.visible{opacity:1;visibility:visible;transform:none}
 .reader{max-width:700px;margin:auto;padding:76px 0 68px;position:relative}.reader:before{content:"";position:absolute;top:34px;left:50%;width:76px;height:1px;background:linear-gradient(90deg,transparent,var(--rose),transparent);transform:translateX(-50%)}.reader-head{text-align:center;margin-bottom:52px}.reader-head:after{content:"❀  ·  ❀";display:block;margin-top:28px;color:var(--jade);font-family:var(--serif);font-size:.9rem;letter-spacing:.18em}.reader-head .kicker{font-size:.7rem}.reader-head h1{font-size:clamp(2.25rem,5vw,3.65rem);margin:10px 0 12px}.reader-head p{color:var(--muted);margin:0;font-size:.9rem}
 .prose{font-family:var(--serif);font-size:1.15rem;line-height:2.05;letter-spacing:.008em}.prose p{margin:0 0 1.65em}.prose h2{font-size:1.75rem;margin:2.4em 0 .8em}.prose h3{font-size:1.35rem;margin:2em 0 .7em}.prose blockquote{margin:2em 0;padding:4px 0 4px 22px;border-left:3px solid var(--rose);color:#6f6260;font-style:italic}.prose a{color:var(--pink-dark);text-decoration:underline;text-underline-offset:3px}.prose strong{font-weight:700}.footnote-ref{font-family:var(--sans);font-size:.68em;vertical-align:super;line-height:0;margin-left:2px}.footnote-ref button{appearance:none;border:0;background:none;padding:0;margin:0;color:var(--pink-dark);font:inherit;font-weight:700;cursor:pointer}.footnote-ref button:hover{text-decoration:underline}.translator-notes{margin-top:58px;padding-top:30px;border-top:1px solid var(--line);font-family:var(--sans);font-size:.9rem;line-height:1.75;color:var(--muted)}.translator-notes h2{font-family:var(--serif);font-size:1.45rem;color:var(--ink);margin:0 0 18px}.translator-notes ol{margin:0;padding-left:1.5rem}.translator-notes li{padding-left:.3rem;margin:0 0 12px}.translator-notes li::marker{color:var(--pink-dark);font-weight:700}.translator-notes p{display:inline;margin:0}.footnote-back{appearance:none;border:0;background:none;padding:0;margin-left:6px;color:var(--jade);font:inherit;font-weight:700;cursor:pointer}.footnote-back:hover{color:var(--pink-dark)}.prose .scene{font-size:.9rem;text-align:center;color:var(--pink);letter-spacing:.25em;margin:35px 0}
-.chapter-like{display:flex;flex-direction:column;align-items:center;gap:8px;margin-top:52px;padding-top:28px;border-top:1px solid var(--line);font-family:var(--sans);text-align:center}.chapter-like-button{appearance:none;border:1px solid var(--rose);background:rgba(255,255,255,.72);color:var(--pink-dark);border-radius:999px;padding:10px 18px;font:700 .9rem var(--sans);cursor:pointer;transition:.18s ease}.chapter-like-button:hover{background:#fff8fa;transform:translateY(-1px)}.chapter-like-button.liked{background:var(--pink);border-color:var(--pink);color:#fff}.chapter-like-note{margin:0;color:var(--muted);font-size:.76rem;line-height:1.5}
+.chapter-like{display:flex;flex-direction:column;align-items:center;gap:8px;margin-top:52px;padding-top:28px;border-top:1px solid var(--line);font-family:var(--sans);text-align:center}.chapter-like-button{appearance:none;border:1px solid var(--rose);background:rgba(255,255,255,.72);color:var(--pink-dark);border-radius:999px;padding:10px 18px;font:700 .9rem var(--sans);cursor:pointer;transition:.18s ease}.chapter-like-button:hover{background:#fff8fa;transform:translateY(-1px)}.chapter-like-button.liked{background:var(--pink);border-color:var(--pink);color:#fff}.chapter-like-note{margin:0;color:var(--muted);font-size:.76rem;line-height:1.5}.chapter-actions{display:flex;justify-content:center;margin-top:18px}.share-chapter{appearance:none;border:0;background:none;color:var(--muted);padding:6px 10px;font:600 .8rem var(--sans);cursor:pointer;transition:color .18s ease}.share-chapter:hover{color:var(--pink-dark)}.share-chapter.copied{color:var(--jade)}
 .reader-nav{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px;border-top:1px solid var(--line);margin-top:58px;padding-top:28px}.reader-nav #prev{justify-self:start}.reader-nav #next{justify-self:end}.reader-nav #backNovel{justify-self:center}
 .about{display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:start}.about p{color:var(--muted)}.note{background:var(--cream);border-radius:22px;padding:28px;border:1px solid #f2e2ca}.note h3{margin-top:0}.note p{margin-bottom:0}.support-link{display:inline-flex;align-items:center;gap:7px;margin-top:18px;color:var(--pink-dark);font-weight:700}.support-link:hover{text-decoration:underline}.translation-notice{margin-top:30px;padding-top:24px;border-top:1px solid var(--line);font-size:.9rem;color:var(--muted)}
 footer{padding:34px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.82rem;text-align:center}.footer-inner{display:flex;flex-direction:column;align-items:center;gap:7px}.footer-links{display:flex;align-items:center;justify-content:center;gap:10px}.footer-links a:hover{color:var(--pink-dark)}.admin-link{opacity:.65}
@@ -182,6 +182,7 @@ footer{padding:34px 0;border-top:1px solid var(--line);color:var(--muted);font-s
     <div class="reader-head"><div id="readerNovel" class="kicker"></div><h1 id="readerTitle"></h1><p id="readerNumber"></p><div class="reader-controls" aria-label="Reading text size"><button type="button" class="reader-control" id="fontDown" aria-label="Decrease text size">A−</button><button type="button" class="reader-control" id="fontReset" aria-label="Reset text size">A</button><button type="button" class="reader-control" id="fontUp" aria-label="Increase text size">A+</button></div></div>
     <article id="prose" class="prose"></article>
     <div class="chapter-like"><button type="button" id="chapterLike" class="chapter-like-button" aria-pressed="false">♡ Like this chapter</button><p class="chapter-like-note">Saved only on this browser.</p></div>
+    <div class="chapter-actions"><button type="button" id="shareChapter" class="share-chapter">↗ Share chapter</button></div>
     <div class="reader-nav"><button class="btn secondary" id="prev">← Previous Chapter</button><a class="btn secondary" id="backNovel" href="#">All Chapters</a><button class="btn secondary" id="next">Next Chapter →</button></div>
   </div>
   <button type="button" id="backToTop" class="back-to-top" aria-label="Back to top">↑ Top</button>
@@ -422,6 +423,26 @@ document.getElementById("fontUp").onclick=()=>{readerFontSize=Math.min(1.45,read
 document.getElementById("backToTop").onclick=()=>window.scrollTo({top:0,behavior:"smooth"});
 window.addEventListener("scroll",updateReadingProgress,{passive:true});
 window.addEventListener("resize",updateReadingProgress);
+async function setShareButton(n,c){
+  const button=document.getElementById("shareChapter");
+  const url=new URL("#read/"+encodeURIComponent(n.id)+"/"+c.chapter_number,location.href).href;
+  const title=n.title+" — Chapter "+c.chapter_number+": "+c.title;
+  button.classList.remove("copied");
+  button.textContent="↗ Share chapter";
+  button.onclick=async()=>{
+    if(navigator.share){
+      try{await navigator.share({title,url});return;}catch(err){if(err?.name==="AbortError")return;}
+    }
+    try{
+      await navigator.clipboard.writeText(url);
+      button.classList.add("copied");
+      button.textContent="✓ Link copied";
+      setTimeout(()=>{button.classList.remove("copied");button.textContent="↗ Share chapter";},1800);
+    }catch{
+      window.prompt("Copy this chapter link:",url);
+    }
+  };
+}
 function chapterLikeKey(id,num){return "yumao-like:"+String(id)+":"+String(num);}
 function setChapterLikeButton(id,num){
   const button=document.getElementById("chapterLike");
@@ -449,6 +470,7 @@ async function openChapter(id,num){
   nb.onclick=()=>next&&(location.hash=`#read/${encodeURIComponent(n.id)}/${next.chapter_number}`);
   document.getElementById("backNovel").href=`#novel/${encodeURIComponent(n.id)}`;
   setChapterLikeButton(n.id,c.chapter_number);
+  setShareButton(n,c);
   localStorage.setItem(`yumao-read:${n.id}:${c.chapter_number}`,"1");
   localStorage.setItem("yumao-last-read:"+n.id,String(c.chapter_number));
   showPage("readerPage");
