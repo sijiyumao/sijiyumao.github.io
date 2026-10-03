@@ -3,7 +3,7 @@ title: "I’m Not Dead Yet, So Don’t Run Off!"
 novel: ihdc
 chapter_number: 33
 date: 2026-10-03
-draft: true
+draft: false
 ---
 Once they secured an advantage in the bot lane, the pressure on the mid and top lanes eased significantly, as the marksman and support could now assist the other lanes.
 
