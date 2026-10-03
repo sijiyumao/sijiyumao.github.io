@@ -15,7 +15,7 @@ collections:
   - name: "novels"
     label: "Novels"
     label_singular: "Novel"
-    description: "Create and manage novels."
+    description: "Create and manage novel information, translation details, covers and tags."
     folder: "content/novels"
     create: true
     extension: "json"
@@ -27,7 +27,7 @@ collections:
       - label: "Title"
         name: "title"
         widget: "string"
-      - label: "Novel ID"
+      - label: "Novel ID (internal — don’t change later)"
         name: "id"
         widget: "string"
         hint: "Permanent URL ID. Use lowercase letters, numbers and hyphens only, e.g. moonlit-teahouse. Do not change this after publishing chapters."
@@ -91,7 +91,7 @@ collections:
   - name: "chapters"
     label: "Chapters"
     label_singular: "Chapter"
-    description: "Write and publish individual chapters."
+    description: "Write chapters, add translator notes, and control publication."
     folder: "content/chapters"
     create: true
     extension: "md"
@@ -128,9 +128,19 @@ collections:
         default: false
         required: false
         hint: "Turn this on to keep the chapter hidden from the public site."
+      - label: "Translator's Notes"
+        name: "translator_notes"
+        widget: "list"
+        required: false
+        summary: "Note {{fields.number}} — {{fields.note}}"
+        hint: "Optional. Add notes here, then place [^1], [^2], etc. in the Chapter Text where each note should appear. You no longer need to type the note definitions at the bottom."
+        fields:
+          - {label: "Number", name: "number", widget: "number", value_type: "int", min: 1}
+          - {label: "Note", name: "note", widget: "text"}
       - label: "Chapter Text"
         name: "body"
         widget: "richtext"
         modes: ["rich_text", "raw"]
         buttons: ["bold", "italic", "strikethrough", "link", "heading-two", "heading-three", "quote"]
         editor_components: []
+        hint: "For translator notes, type [^1], [^2], etc. at the relevant words. Add the corresponding note text in the Translator’s Notes section above."
