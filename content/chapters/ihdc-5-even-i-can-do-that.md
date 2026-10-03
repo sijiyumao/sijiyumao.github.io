@@ -3,7 +3,7 @@ title: Even I Can Do That!
 novel: ihdc
 chapter_number: 5
 date: 2026-10-03
-draft: true
+draft: false
 ---
 The match between UH and YJ continued. Although YJ had conquered the Dragon, their marksman and mid-laner had both been killed by Ling Suyu. Their top-laner, jungler, and support revived, but even after furiously attacking, they didn’t manage to take down a single one of UH’s towers.
 
