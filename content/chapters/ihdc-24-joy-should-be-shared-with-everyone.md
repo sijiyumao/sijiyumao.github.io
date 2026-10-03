@@ -1,12 +1,15 @@
 ---
-title: "Joy Should Be Shared with Everyone!"
+title: Joy Should Be Shared with Everyone!
 novel: ihdc
 chapter_number: 24
 date: 2026-10-03
 draft: true
 translator_notes:
   - number: 1
-    note: "The Chinese expression equivalent to ‘what the hell’ is 什么鬼 (shen me gui), so taking the first three letters of the characters in pinyin, it’s SMG. Since it fits well with this team’s wild playstyle, Fight calls them ‘what the hell’."
+    note: The Chinese expression equivalent to ‘what the hell’ is 什么鬼 (shen me gui),
+      so taking the first three letters of the characters in pinyin, it’s SMG.
+      Since it fits well with this team’s wild playstyle, Fight calls them ‘what
+      the hell’.
 ---
 As the New Years break came to an end, the members of Fight gradually returned.
 
@@ -108,7 +111,9 @@ After the two shook hands, Mo Xiaoyun didn’t immediately leave, instead follow
 
 After saying that, he didn’t even give Ling Suyu a chance to respond. He once again nodded to Tang Yu’an before walking past the two of them, heading upstairs.
 
-Ling Suyu: QAQ; Tang Yu’an coughed lightly: “Let me translate for him: Fight didn’t take you in because we pitied you, but rather because of your skills. You got into Fight with your strength, so play well in the upcoming competitions. Let’s work hard together, and get Fight the championship!”
+Ling Suyu: QAQ; 
+
+Tang Yu’an coughed lightly: “Let me translate for him: Fight didn’t take you in because we pitied you, but rather because of your skills. You got into Fight with your strength, so play well in the upcoming competitions. Let’s work hard together, and get Fight the championship!”
 
 Ling Suyu’s gaze towards him was full of distrust.
 
