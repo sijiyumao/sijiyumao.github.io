@@ -1,3 +1,4 @@
+# Generates the content manifest and public RSS feed.
 from pathlib import Path
 import json
 import re
