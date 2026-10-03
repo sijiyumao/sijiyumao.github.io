@@ -89,7 +89,7 @@
       "novel": "ihdc",
       "chapter_number": 19,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-2-this-marksman-is-just-a-coward.md",
@@ -105,7 +105,7 @@
       "novel": "ihdc",
       "chapter_number": 20,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-21-how-was-tang-yuan-good-at-everything.md",
@@ -113,7 +113,7 @@
       "novel": "ihdc",
       "chapter_number": 21,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-22-in-order-to-win-i-cant-die.md",
@@ -121,7 +121,7 @@
       "novel": "ihdc",
       "chapter_number": 22,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-23-what-kind-of-strange-pajamas-are-those.md",
@@ -129,7 +129,7 @@
       "novel": "ihdc",
       "chapter_number": 23,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-24-joy-should-be-shared-with-everyone.md",
@@ -137,7 +137,7 @@
       "novel": "ihdc",
       "chapter_number": 24,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-25-feather-youre-an-angel.md",
@@ -145,7 +145,7 @@
       "novel": "ihdc",
       "chapter_number": 25,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-26-pentakill-even-the-gods-bow-down.md",
@@ -153,7 +153,7 @@
       "novel": "ihdc",
       "chapter_number": 26,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-27-i-was-just-messing-with-them-dont-you-go-believing-in-it.md",
@@ -161,7 +161,7 @@
       "novel": "ihdc",
       "chapter_number": 27,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-28-your-captain-needs-a-beating.md",
@@ -169,7 +169,7 @@
       "novel": "ihdc",
       "chapter_number": 28,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-29-are-you-interested-in-him.md",
