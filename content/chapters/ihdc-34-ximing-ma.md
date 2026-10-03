@@ -3,7 +3,7 @@ title: "Ximing Ma?"
 novel: ihdc
 chapter_number: 34
 date: 2026-10-03
-draft: true
+draft: false
 ---
 You guys aren’t still going to treat Feather as UH’s substitute, are you?
 
