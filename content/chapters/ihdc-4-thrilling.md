@@ -4,6 +4,10 @@ novel: ihdc
 chapter_number: 4
 date: 2026-10-02
 draft: false
+translator_notes:
+  - number: 1
+    note: For those who don't play MOBAs, ganking is when a player leaves their
+      assigned area to ambush the enemy/help their teammates in another area.
 ---
 【System】Tempest Blade, one kill!
 
@@ -17,7 +21,7 @@ draft: false
 
 Listening to this stream of system announcements, Ling Suyu glanced at his minimap. As he spotted the multiple red dots on the top lane representing enemy minions, he couldn’t help furrowing his brows. 
 
-A few seconds ago, he’d wanted to remind his team’s top-laner that he was pushing too deep, but since he saw his team’s jungler go up to gank[^3], he didn’t say anything. 
+A few seconds ago, he’d wanted to remind his team’s top-laner that he was pushing too deep, but since he saw his team’s jungler go up to gank[^1], he didn’t say anything. 
 
 As a result…
 
