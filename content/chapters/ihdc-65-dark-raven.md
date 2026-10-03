@@ -3,7 +3,7 @@ title: "Dark Raven?"
 novel: ihdc
 chapter_number: 65
 date: 2026-10-03
-draft: true
+draft: false
 translator_notes:
   - number: 1
     note: "桃子 (tao zi), as in peach, the fruit."
