@@ -4,6 +4,16 @@ novel: ihdc
 chapter_number: 3
 date: 2026-10-02
 draft: false
+translator_notes:
+  - number: 1
+    note: A play on his name if you read the two characters Yu An as one (yuan).
+      Tangyuan are traditional Chinese desserts made of glutinous rice + some
+      sort of filling, usually boiled and served in hot broth or syrup.
+      Personally, I prefer sweet sesame filling!
+  - number: 2
+    note: A play on the last character of Dou Jiayan's name, 'yan' 燕, which means
+      swallow (as in the bird). I've decided to leave it in pinyin because it's
+      also his nickname.
 ---
 At Ling Suyu’s reply, Cui Ran couldn’t help but roll his eyes.
 
@@ -85,9 +95,9 @@ Dou Jiayan coughed, on one hand responding “Nothing” and on the other openin
 
 Receiving his message, Fight’s captain Tang Yu’an raised an eyebrow and looked to his right, ultimately choosing to respond on the messaging app. 
 
-*tangyuan*: can’t say for sure. also why are you messaging me when you’re right beside me?
+*tangyuan*[^1]: can’t say for sure. also why are you messaging me when you’re right beside me?
 
-*yanzi*: isn’t it just because I’m afraid of disturbing the others’ practice~
+*yanzi*[^2]: isn’t it just because I’m afraid of disturbing the others’ practice~
 
 *tangyuan*: oh, so you know they’re training? then what are you doing?
 
