@@ -14,6 +14,11 @@ translator_notes:
     note: A play on the last character of Dou Jiayan's name, 'yan' 燕, which means
       swallow (as in the bird). I've decided to leave it in pinyin because it's
       also his nickname.
+  - number: 3
+    note: "The suffix -ge (哥) means 'brother,' and here it's added to Chen Jie's
+      name to create something to the effect of 'Brother Jie.' I've decided to
+      leave these nicknames untranslated since in English they tend to sound
+      clunky. "
 ---
 At Ling Suyu’s reply, Cui Ran couldn’t help but roll his eyes.
 
@@ -103,7 +108,7 @@ Receiving his message, Fight’s captain Tang Yu’an raised an eyebrow and look
 
 *yanzi*: getting to know the enemy, captain~ don’t you think that after UH switched to their substitute, they actually became a lot stronger? This cooperation, this tacit understanding!
 
-tangyuan: that’s YJ panicking.
+*tangyuan*: that’s YJ panicking.
 
 In that fight just now, UH’s bottom lane and jungler cooperated well and seemingly effortlessly got two kills from YJ. However, the fact that YJ’s marksman fell for such an obvious bait had the potential to be a career-ending move. 
 
@@ -129,7 +134,7 @@ Dou Jiayan saw this message and looked to his left in bewilderment, but only saw
 
 *yanzi*: …dunno, ask the manager?
 
-tangyuan: sure, I’ll ask later.
+*tangyuan*: sure, I’ll ask later.
 
 Fight’s marksman hurt his hand in the previous season, and in order to preserve his hand, though Tang Yu’an received an invitation to the White Fox Cup competition, he decisively refused and gave the marksman Chen Jie a 1-month break. 
 
@@ -149,7 +154,7 @@ Tang Yu’an took his headphones and hung them around his neck, turning and faci
 
 “YJ panicking is one thing, but whether Feather is a good marksman or not is another.” Tang Yu’an replied calmly, “Nevertheless, the match has just begun, and I just pulled up Feather’s past recordings and haven’t had the chance to look at them yet. Although I have thoughts of poaching, nothing’s set in stone yet, so why are you so nervous?”
 
-“I’m just…” Dou Jiayan puffed out his cheeks and lowered his voice, “worried that after you get a new marksman you won’t care about Jie-ge anymore.”
+“I’m just…” Dou Jiayan puffed out his cheeks and lowered his voice, “worried that after you get a new marksman you won’t care about *Jie-ge*[^3] anymore.”
 
 Hearing this, Tang Yu’an couldn’t resist letting out a “pfft” in laughter: “Look at how you’re talking, those who don’t know better would think that something happened between me and A-Jie.” After a moment, he switched to a more serious tone, “A-Jie is a good marksman, but he pushes himself too hard. It’s…about time he got some time to rest.”
 
