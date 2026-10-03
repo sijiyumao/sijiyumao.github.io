@@ -205,7 +205,9 @@ function parseChapter(text){
     let x=line.match(/^\s*-\s*number:\s*["']?(\d+)["']?\s*$/);
     if(x){currentNote={number:Number(x[1]),note:""};notes.push(currentNote);return;}
     x=line.match(/^\s*note:\s*(.*)$/);
-    if(x&&currentNote) currentNote.note=x[1].trim().replace(/^["']|["']$/g,"");
+    if(x&&currentNote){currentNote.note=x[1].trim().replace(/^["']|["']$/g,"");return;}
+    x=line.match(/^\s{6,}(\S.*)$/);
+    if(x&&currentNote&&currentNote.note) currentNote.note+=" "+x[1].trim().replace(/^["']|["']$/g,"");
   });
   if(notes.length) meta.translator_notes=notes;
   meta.body=m[2].trim();
