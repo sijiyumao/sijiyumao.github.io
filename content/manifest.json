@@ -5,6 +5,14 @@
   ],
   "chapters": [
     {
+      "path": "content/chapters/agtb-1-the-most-comfortable-relationships-are-those-that-dont-run-too-deep.md",
+      "title": "The Most Comfortable Relationships Are Those That Don't Run Too Deep.",
+      "novel": "agtb",
+      "chapter_number": 1,
+      "date": "2026-10-03",
+      "draft": true
+    },
+    {
       "path": "content/chapters/ihdc-1-guardian-spirit-got-first-blood.md",
       "title": "Guardian Spirit Got First Blood!",
       "novel": "ihdc",
