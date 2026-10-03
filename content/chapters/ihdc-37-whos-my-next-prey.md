@@ -8,9 +8,7 @@ translator_notes:
   - number: 1
     note: "from now on, when it’s just casual chatter between Fight’s members, I’ll use Yumao instead of Feather, since it sounds less stiff…"
   - number: 2
-    note: "community pages on Weibo
-
-that are similar to subreddits."
+    note: "community pages on Weibo that are similar to subreddits."
   - number: 3
     note: "羽语还休 (yu yu huan xiu), which uses a combination of the last character of Ling Suyu’s name ‘yu’ (羽), which means feather, and the second character of Tang Yu’an’s name ‘yu’ (语), which can mean language/words etc."
   - number: 4
