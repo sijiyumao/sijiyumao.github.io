@@ -3,7 +3,7 @@ title: "If You Dare to Release It, We Dare to Pick It"
 novel: ihdc
 chapter_number: 44
 date: 2026-10-03
-draft: true
+draft: false
 translator_notes:
   - number: 1
     note: "是真的 (shi zhen de), meaning -is real"
