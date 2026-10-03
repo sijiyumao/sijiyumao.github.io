@@ -28,8 +28,6 @@ This was actually a warning sign. When senior executives at a large company prop
 
 Thinking about this, Ren Jinhuan had also wondered whether Wen Yan was the right leader for him. Back when the E-Commerce Division was still in its “barren period,” he had followed Wen Yan over because he knew the group was short-staffed; by joining, he would stand out from the crowd and be able to rise through the ranks faster. He was driven purely by self-interest, and the results proved that he had made the right bet. Wen Yan had indeed recognized his talent and promoted him, but their management styles were incompatible. Ren Jinhuan was willing to cooperate, but he didn’t feel comfortable doing so.
 
-
-
 During his lunch break, Ren Jinhuan took some gifts to visit acquaintances in other departments, eventually arriving at the Strategic Investment Department. The Strategic Investment Department was primarily responsible for Aladdin’s external industrial investments, mergers, and acquisitions. The staff were mostly recruited from Ivy League schools and investment banks. At the same time, this was the department that experienced the greatest contrast in daily life. In their own words, they looked presentable at 10 a.m. but were a mess by 10 p.m., truly embodying the saying “all show and no substance.” Fortunately, it was currently only 1:00 p.m.
 
 There weren’t many people in the Strategic Investment Department, and Ren Jinhuan had gotten to know most of them after visiting a few times. One colleague, knowing the reason for his visit, teased him: “Manager Ren, you’ve been popping by here so often. Isn’t Boss Wen worried you’ll switch departments?”
