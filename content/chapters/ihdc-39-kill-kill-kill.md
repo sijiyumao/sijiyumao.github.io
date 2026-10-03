@@ -3,7 +3,7 @@ title: "Kill Kill Kill!"
 novel: ihdc
 chapter_number: 39
 date: 2026-10-03
-draft: true
+draft: false
 ---
 Due to Ling Suyu’s virality, Fight was already the most talked-about team of the season, and after the first day of the qualifiers, their popularity doubled.
 
