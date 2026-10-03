@@ -3,7 +3,7 @@ title: The Most Comfortable Relationships Are Those That Don't Run Too Deep.
 novel: agtb
 chapter_number: 1
 date: 2026-10-03
-draft: true
+draft: false
 translator_notes:
   - number: 1
     note: The '-ge' (哥) suffix, meaning 'brother,' is often added to people's names
@@ -33,8 +33,6 @@ He spoke at a moderate pace, without any abrupt pauses that might suggest fallin
 The description, just over 300 characters long and accompanied by a photo, took up two mobile screens. Compared to previous posts, Today’s wording was exceptionally gentle, yet Ren Jinhuan, on the contrary, lacked his earlier sense of leisure.
 
 He wasn’t the only one interviewed, and there were certainly many with far more seniority than him. The fact that he was given such preferential treatment was bound to invite some criticism. Moreover, with recent rumors circulating within the company regarding the department led by Wen Yan, this article seemed somewhat ill-timed.
-
-
 
 After getting off the plane, Wen Yan drove Ren Jinhuan back to his place. Upon arriving, Wen Yan offered to walk him up the stairs, but Ren Jinhuan politely declined. It was the last day of his business trip, and Wen Yan had flown all the way to Malaysia just to pick him up for the return trip—Ren Jinhuan already felt bad enough about that. He simply wanted to keep their relationship as a strictly professional one between superior and subordinate with no ulterior motives, but Wen Yan seemed to be testing his boundaries.
 
@@ -71,8 +69,6 @@ Only after the car had rounded the corner at the end of the road and disappeared
 Maintaining interpersonal relationships often required a tremendous amount of energy. In recent years, personal content creators had begun calling for people to focus on their inner selves and abandon meaningless socializing. However, Ren Jinhuan believed that very few people could consistently transform solely personal investment into tangible value. The vast majority of profit opportunities in modern life stemmed from differences in information, and these were almost entirely hidden within those interpersonal relationships that appeared casual but were, in fact, carefully balanced.
 
 Wen Yan didn’t know the background of this new figure, but that didn’t mean Ren Jinhuan couldn’t find out.
-
-
 
 The car finally stopped in front of a trendy bar. As soon as he walked in, the metallic sounds of future house music mixed with the scent of e-cigarettes created a psychedelic summer vibe. In the early evening, the place gradually filled with people. Ren Jinhuan looked around and finally spotted the person waiting for him at one of the booths.
 
