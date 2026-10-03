@@ -3,7 +3,7 @@ title: "You’re So in Sync? Trying to Duet?"
 novel: ihdc
 chapter_number: 63
 date: 2026-10-03
-draft: true
+draft: false
 translator_notes:
   - number: 1
     note: "The phrase used here is 唱双簧 (chang shuang huang), where Shuang Huang is a performance acted out by two people, one in the front and the other in the back, talking/singing in accordance to the actions of the first person. The intended effect is that the two’s actions merge as if they originated from a single person. Colloquially, it means two people are scheming or collaborating together."
