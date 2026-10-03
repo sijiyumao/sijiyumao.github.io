@@ -3,7 +3,7 @@ title: "Overcoming Countless Obstacles Just to Arrive by Your Side?"
 novel: ihdc
 chapter_number: 41
 date: 2026-10-03
-draft: true
+draft: false
 translator_notes:
   - number: 1
     note: "司马昭之心，路人皆知 (si ma zhao zhi xin, lu ren jie zhi) is a saying in reference to Sima Zhao, an infamous general, politician, and regent of the Cao Wei state during the Three Kingdoms period of China’s history. The Sima family had actually seized power of the state from the Cao family, and I believe the saying is initially credited to Cao Mao, who tried (unsuccessfully) to launch a rebellion to take back the state from Sima Zhao."
