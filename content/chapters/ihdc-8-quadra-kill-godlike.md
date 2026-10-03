@@ -3,7 +3,7 @@ title: "Quadra Kill! Godlike!"
 novel: ihdc
 chapter_number: 8
 date: 2026-10-03
-draft: true
+draft: false
 translator_notes:
   - number: 1
     note: "An onomatopoeia, in this case basically just a drawn-out sigh, although it can be used to express other things like ‘oh you.’ It’s a very versatile exclamation."
