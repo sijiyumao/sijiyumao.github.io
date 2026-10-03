@@ -3,7 +3,7 @@ title: "The Enemy Heroes Have All Fallen!"
 novel: ihdc
 chapter_number: 10
 date: 2026-10-03
-draft: true
+draft: false
 ---
 Ling Suyu controlled Cat Spirit and followed the support Spider Queen into their side’s lower jungle.
 
