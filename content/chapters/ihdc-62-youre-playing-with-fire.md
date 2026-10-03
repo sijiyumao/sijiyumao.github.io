@@ -3,7 +3,7 @@ title: "You’re Playing with Fire"
 novel: ihdc
 chapter_number: 62
 date: 2026-10-03
-draft: true
+draft: false
 ---
 【Welcome back to the 13th BPL Spring Quarterfinals! Hello everyone, I’m your commentator Liang Fan!】
 
