@@ -97,7 +97,7 @@ collections:
     extension: "md"
     format: "frontmatter"
     identifier_field: "title"
-    summary: "Chapter {{chapter_number}} — {{title}}"
+    summary: "Chapter {{fields.chapter_number}} — {{title}}"
     slug: "{{novel}}-{{chapter_number}}-{{slug}}"
     sortable_fields: ["date", "title", "chapter_number"]
     fields:
