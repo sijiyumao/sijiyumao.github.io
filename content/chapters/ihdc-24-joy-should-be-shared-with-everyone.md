@@ -3,7 +3,7 @@ title: Joy Should Be Shared with Everyone!
 novel: ihdc
 chapter_number: 24
 date: 2026-10-03
-draft: true
+draft: false
 translator_notes:
   - number: 1
     note: The Chinese expression equivalent to ‘what the hell’ is 什么鬼 (shen me gui),
