@@ -3,7 +3,7 @@ title: "I Can Take Him!"
 novel: ihdc
 chapter_number: 46
 date: 2026-10-03
-draft: true
+draft: false
 ---
 “It’s fine, I can take him down!”
 
