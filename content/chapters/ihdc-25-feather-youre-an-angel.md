@@ -3,7 +3,7 @@ title: "Feather, You’re an Angel!"
 novel: ihdc
 chapter_number: 25
 date: 2026-10-03
-draft: true
+draft: false
 ---
 “Cat Spirit?” Mo Xiaoyun thought he’d misheard.
 
