@@ -57,16 +57,16 @@ h1{font-size:clamp(2.6rem,7vw,5rem);margin:14px 0}
 .novel-info h1{font-size:clamp(2.2rem,5vw,4rem);margin:8px 0}.novel-info p{color:var(--muted);max-width:700px}
 .chapter-list{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden}
 .chapter{display:flex;justify-content:space-between;gap:15px;padding:15px 20px;border-bottom:1px solid var(--line)}.chapter:last-child{border:0}.chapter:hover{background:#fff8fa}.chapter small{color:var(--muted)}
-.reader{max-width:760px;margin:auto;padding:60px 0}.reader-head{text-align:center;margin-bottom:40px}.reader-head .kicker{font-size:.7rem}.reader-head h1{font-size:clamp(2.2rem,5vw,3.5rem);margin:8px 0}.reader-head p{color:var(--muted)}
-.prose{font-family:var(--serif);font-size:1.12rem;line-height:2.08;letter-spacing:.01em}.prose p{margin:0 0 1.5em}.prose .scene{font-size:.9rem;text-align:center;color:var(--pink);letter-spacing:.25em;margin:35px 0}
-.reader-nav{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--line);margin-top:45px;padding-top:25px}
+.reader{max-width:700px;margin:auto;padding:72px 0 64px}.reader-head{text-align:center;margin-bottom:52px}.reader-head:after{content:"❀  ·  ❀";display:block;margin-top:28px;color:var(--jade);font-family:var(--serif);font-size:.9rem;letter-spacing:.18em}.reader-head .kicker{font-size:.7rem}.reader-head h1{font-size:clamp(2.25rem,5vw,3.65rem);margin:10px 0 12px}.reader-head p{color:var(--muted);margin:0;font-size:.9rem}
+.prose{font-family:var(--serif);font-size:1.15rem;line-height:2.05;letter-spacing:.008em}.prose p{margin:0 0 1.65em}.prose h2{font-size:1.75rem;margin:2.4em 0 .8em}.prose h3{font-size:1.35rem;margin:2em 0 .7em}.prose blockquote{margin:2em 0;padding:4px 0 4px 22px;border-left:3px solid var(--rose);color:#6f6260;font-style:italic}.prose a{color:var(--pink-dark);text-decoration:underline;text-underline-offset:3px}.prose strong{font-weight:700}.prose .scene{font-size:.9rem;text-align:center;color:var(--pink);letter-spacing:.25em;margin:35px 0}
+.reader-nav{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px;border-top:1px solid var(--line);margin-top:58px;padding-top:28px}.reader-nav #prev{justify-self:start}.reader-nav #next{justify-self:end}.reader-nav #backNovel{justify-self:center}
 .about{display:grid;grid-template-columns:1.2fr .8fr;gap:35px;align-items:start}.note{background:var(--cream);border-radius:22px;padding:28px;border:1px solid #f2e2ca}.note h3{margin-top:0}
 footer{padding:40px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.85rem;text-align:center}
 .empty{text-align:center;color:var(--muted);padding:45px;grid-column:1/-1}
 .page{display:none}.page.active{display:block}
 @media(max-width:750px){
  nav{display:none;position:absolute;left:0;right:0;top:72px;background:var(--bg);padding:15px 4%;border-bottom:1px solid var(--line);flex-direction:column;gap:10px}
- nav.open{display:flex}.menu{display:block}.grid{grid-template-columns:1fr}.novel-top,.about{grid-template-columns:1fr}.big-cover{width:min(230px,100%);margin:auto}.section{padding:50px 0}.hero{padding:65px 0}
+ nav.open{display:flex}.menu{display:block}.grid{grid-template-columns:1fr}.novel-top,.about{grid-template-columns:1fr}.big-cover{width:min(230px,100%);margin:auto}.section{padding:50px 0}.hero{padding:65px 0}.reader{width:min(92%,700px);padding:48px 0}.reader-head{margin-bottom:38px}.prose{font-size:1.08rem;line-height:1.95}.reader-nav{grid-template-columns:1fr 1fr}.reader-nav #backNovel{grid-column:1/-1;grid-row:2;justify-self:center}.reader-nav .btn{padding:10px 14px;font-size:.88rem}
 }
 </style>
 </head>
@@ -149,7 +149,7 @@ footer{padding:40px 0;border-top:1px solid var(--line);color:var(--muted);font-s
   <div class="container reader">
     <div class="reader-head"><div id="readerNovel" class="kicker"></div><h1 id="readerTitle"></h1><p id="readerNumber"></p></div>
     <article id="prose" class="prose"></article>
-    <div class="reader-nav"><button class="btn secondary" id="prev">← Previous</button><a class="btn secondary" id="backNovel" href="#">Chapters</a><button class="btn secondary" id="next">Next →</button></div>
+    <div class="reader-nav"><button class="btn secondary" id="prev">← Previous Chapter</button><a class="btn secondary" id="backNovel" href="#">All Chapters</a><button class="btn secondary" id="next">Next Chapter →</button></div>
   </div>
 </section>
 </main>
@@ -189,7 +189,7 @@ function renderMarkdown(md){
     if(block.startsWith("### ")) return `<h3>${inlineMd(block.slice(4))}</h3>`;
     if(block.startsWith("## ")) return `<h2>${inlineMd(block.slice(3))}</h2>`;
     if(block.startsWith("> ")) return `<blockquote>${inlineMd(block.slice(2).replace(/\n>\s?/g," "))}</blockquote>`;
-    return `<p>${inlineMd(block.replace(/\n/g,"<br>"))}</p>`;
+    return `<p>${block.split("\n").map(line=>inlineMd(line)).join("<br>")}</p>`;
   }).join("");
 }
 async function loadContent(){
@@ -236,7 +236,7 @@ function openNovel(id){
   document.getElementById("novelType").textContent=(n.type==="translation"?"CHINESE WEBNOVEL TRANSLATION":"ORIGINAL WEBNOVEL")+" · "+String(n.status).toUpperCase();
   document.getElementById("novelDesc").textContent=n.desc||"";
   const cs=n.chapters||[];
-  document.getElementById("novelMeta").textContent=`${cs.length} chapters · Last updated ${cs.length?cs[cs.length-1].date:"—"}`;
+  document.getElementById("novelMeta").textContent=`${cs.length} ${cs.length===1?"chapter":"chapters"} · Last updated ${cs.length?cs[cs.length-1].date:"—"}`;
   document.getElementById("novelTags").innerHTML=(n.tags||[]).map(t=>`<span class="tag">${escapeHtml(t)}</span>`).join("");
   document.getElementById("chapters").innerHTML=cs.length?cs.map(c=>`<a class="chapter" href="#read/${encodeURIComponent(n.id)}/${c.chapter_number}"><span><strong>Chapter ${c.chapter_number}</strong> — ${escapeHtml(c.title)}</span><small>${escapeHtml(c.date)}</small></a>`).join(""):`<div class="empty">No chapters published yet.</div>`;
   showPage("novelPage");
