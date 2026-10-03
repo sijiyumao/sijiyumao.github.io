@@ -12,7 +12,7 @@ Before the match against igame began, Ling Suyu truly believed that Tang Yu’an
 
 He had already gotten used to it and even thought it was a good thing. After all, it helped ease his teammates’ nerves and kept everyone from getting too tense during the match.
 
-However, once the match against igame began—especially after entering the battlefield— Tang Yu’an displayed a level of seriousness completely different from before. Not only was his tone much more serious, but his commands were also brief and clear: “Yumao takes the bottom dragon, Yu He takes the top dragon, and everyone in the top and mid lanes go help.”
+However, once the match against igame began—especially after entering the battlefield—Tang Yu’an displayed a level of seriousness completely different from before. Not only was his tone much more serious, but his commands were also brief and clear: “Yumao takes the bottom dragon, Yu He takes the top dragon, and everyone in the top and mid lanes go help.”
 
 Immediately after, he added: “Yumao, let’s play it safe. The enemy might counter-jungle right from the start.”
 
@@ -22,7 +22,7 @@ That’s just too bold!
 
 igame didn’t do this when they played against GQ or OsO, did they?
 
-Still, if you had to ask whether it was possible, well, it actually was.
+Still, if you had to ask whether it was  possible, well, it actually was.
 
 So Ling Suyu obediently replied, “Okay.”
 
@@ -54,17 +54,13 @@ So once the game began, igame’s captain and jungler, Ye Xunjie, spoke up: “B
 
 And so, on the livestream feed with its bird’s-eye view, igame’s jungler, marksman, support, and mid laner all surged into Fight’s bottom jungle!
 
-“igame is counter-jungling right from the start!” Ah-Mu exclaimed excitedly. “igame is so bold!
-
-But the greater the risk, the greater the reward. If they actually manage to steal this camp, Fight is going to have a rough time early on!”
+“igame is counter-jungling right from the start!” Ah-Mu exclaimed excitedly. “igame is so bold! But the greater the risk, the greater the reward. If they actually manage to steal this camp, Fight is going to have a rough time early on!”
 
 Fight had also noticed igame’s high-profile counter-jungle attempt.
 
 “Something’s off. I’ve got no one on my lane.” After feigning a few auto-attacks to help Yu He, Dou Jiayan immediately rushed back to his lane to farm minions.
 
-The mid lane minions arrived first; if he was even a split second late, he’d miss the first one.
-
-For a mid laner who relied on gold to deal damage, missing even a tiny bit of gold felt like losing a hundred million.
+The mid lane minions arrived first; if he was even a split second late, he’d miss the first one. For a mid laner who relied on gold to deal damage, missing even a tiny bit of gold felt like losing a hundred million.
 
 But his lane was completely empty, not a soul in sight.
 
@@ -104,11 +100,15 @@ Witnessing this, the live audience couldn’t help but hold their breath.
 
 Both players activated their abilities or talents almost simultaneously; the timing couldn’t have been better. Even if there was a difference, it was within 0.1 seconds, too brief for the naked eye to detect, leaving the system to make the call.
 
-And the system’s verdict was— A small red marker, signifying the red dragon’s buff, appeared above Child of Frost’s head, and all the experience and gold from the red dragon went to Child of Frost.
+And the system’s verdict was—
+
+A small red marker, signifying the red dragon’s buff, appeared above Child of Frost’s head, and all the experience and gold from the red dragon went to Child of Frost.
 
 Tang Yu’an gave a quiet sigh: “Yanzi, don’t come over.”
 
-The very next moment— 【System】Child of Frost, first blood!
+The very next moment—
+
+【System】Child of Frost, first blood!
 
 【System】Ally Abyssal Lord has been slain!
 
@@ -148,9 +148,7 @@ If he couldn’t steal it, he couldn’t steal it. Just as Tang Yu’an had said
 
 But for some reason, thinking about how Tang Yu’an had died for him, and that he hadn’t even managed to steal the red dragon, Ling Suyu, though he ran off just as decisively as ever, without even looking back, felt a vague sense of guilt he couldn’t quite put his finger on.
 
-Perhaps sensing his emotional turmoil, Tang Yu’an, who had been on edge the entire time since the match began, suddenly reverted to his usual laid-back self and started cracking jokes to lighten the mood: “igame must be gloating like crazy right now, huh? Let them gloat a little longer! The more they’re gloating now, the harder they’ll cry once we win this match!
-
-Yumao, just focus on leveling up for now. Once you’re ready, we’re going to take them down! Especially that jungler—we won’t be satisfied until we’ve killed him a hundred times!”
+Perhaps sensing his emotional turmoil, Tang Yu’an, who had been on edge the entire time since the match began, suddenly reverted to his usual laid-back self and started cracking jokes to lighten the mood: “igame must be gloating like crazy right now, huh? Let them gloat a little longer! The more they’re gloating now, the harder they’ll cry once we win this match! Yumao, just focus on leveling up for now. Once you’re ready, we’re going to take them down! Especially that jungler—we won’t be satisfied until we’ve killed him a hundred times!”
 
 “You’re right!” Dou Jiayan was the first to chime in. “Killing our captain right at the start, that’s a total lack of respect! We’re gonna have to hunt him down the whole game, aren’t we?!”
 
@@ -158,9 +156,7 @@ Mo Xiaoyun: “igame’s really getting out of hand. We’ll make them pay in th
 
 Yu He nodded: “Let’s avenge the captain.”
 
-Hearing his teammates’ words, Ling Suyu let out a sigh of relief and murmured, “Mm-hmm.”
-
-“I’m going to farm first.”
+Hearing his teammates’ words, Ling Suyu let out a sigh of relief and murmured, “Mm-hmm.” “I’m going to farm first.”
 
 After he and Tang Yu’an arrived at their lane, they began farming minions safely under the tower.
 
@@ -182,9 +178,7 @@ Sure enough, the enemy jungler Child of Frost used the minion wave to dash into 
 
 “igame has a great chance this game!” ZhiZhi said, “Desert Hunter is a champion who can’t deal damage without early-game gold. Fight’s jungler gave all the bottom jungle camps to Desert Hunter, leaving himself unable to farm. If Desert Hunter still can’t farm up under these conditions, then during team fights, it’s as if Fight is missing two teammates at once!”
 
-“Actually, I was really looking forward to seeing Desert Hunter dominate in the quarterfinals.”
-
-Ah-Mu said, “But against igame, Desert Hunter is indeed a bit out of his depth.”
+“Actually, I was really looking forward to seeing Desert Hunter dominate in the quarterfinals.” Ah-Mu said, “But against igame, Desert Hunter is indeed a bit out of his depth.”
 
 UH’s match was already over. Today was the 18th, and the quarterfinal points round was on the 27th, leaving nine days left before it began. So instead of rushing into practice, they turned their attention to the matches of the other quarterfinal teams, including the upcoming Fight vs. igame match that would follow theirs.
 
@@ -204,13 +198,9 @@ UH’s starters all breathed a sigh of relief and began to gloat: “Who let him
 
 It wasn’t just UH’s starters bragging. Once UH’s fans found out how hard Fight was struggling against igame, they started bragging too:
 
-【Is this the ‘Feather’ you guys have been hyping up, the one who can carry four and
+【Is this the ‘Feather’ you guys have been hyping up, the one who can carry four and get a pentakill?】
 
-get a pentakill?】
-
-【The commentator even called him Glorious’s number one Desert Hunter—that’s
-
-hilarious!】
+【The commentator even called him Glorious’s number one Desert Hunter—that’s hilarious!】
 
 【He can’t even beat igame, and he thinks he can beat us, UH?】
 
@@ -288,9 +278,7 @@ Just before they actually broke through, Tang Yu’an called out, “Xiaoyun, no
 
 Hearing the command, Mo Xiaoyun didn’t even pause to think—he unleashed his ultimate straight into the Dragon Pit!
 
-The ultimate ability of the Black-Armoured Scythe, “Scythe Armour,” was a two-stage skill.
-
-The first stage hurled the massive scythe in his hand, dealing damage to enemy targets within the area where it landed. The second stage used the chain attached to the scythe’s tail to pull him toward it, temporarily boosting his defense.
+The ultimate ability of the Black-Armoured Scythe, “Scythe Armour,” was a two-stage skill. The first stage hurled the massive scythe in his hand, dealing damage to enemy targets within the area where it landed. The second stage used the chain attached to the scythe’s tail to pull him toward it, temporarily boosting his defense.
 
 After pulling himself into the pit, Mo Xiaoyun immediately used his second ability, “Chains of Darkness,” to precisely latch onto the enemy jungler, Child of Frost. To steal the Dragon, you had to take out the jungler first!
 
@@ -298,9 +286,7 @@ igame had been fairly decisive in taking the Dragon, so by this point, the Drago
 
 As soon as Mo Xiaoyun entered the pit, the Dragon God’s health bar appeared in Fight’s field of view. Yu He saw it and thought, “Perfect timing—I can finish him off.” He immediately used “Shadow Displacement” to enter the pit, followed by “Smite”!
 
-【System】Double Phantom has successfully conquered the Dragon God and
-
-summoned the divine dragon legion!
+【System】Double Phantom has successfully conquered the Dragon God and summoned the divine dragon legion!
 
 “Fight has snatched the Dragon God!!” Ah-Mu shouted in disbelief!
 
@@ -308,9 +294,7 @@ Just as he let out his cry, Dou Jiayan’s Nine-Tailed Fox unleashed its ultimat
 
 Amid this searing sea of flames, Tang Yu’an shielded Ling Suyu as they charged head-on into the fray. Ling Suyu’s Desert Hunter activated his ultimate, “Roar of the Desert,” boosting all his damage, then immediately locked onto the enemy marksman and unleashed a barrage of attacks!
 
-Desert Hunter’s first skill, “Hunter’s Trap,” was a speed debuff that dealt minimal damage.
-
-Ling Suyu usually only used it during the laning phase. In team fights, he’d treat this skill as nonexistent, auto-attacking whenever possible, landing every extra hit he could!
+Desert Hunter’s first skill, “Hunter’s Trap,” was a speed debuff that dealt minimal damage. Ling Suyu usually only used it during the laning phase. In team fights, he’d treat this skill as nonexistent, auto-attacking whenever possible, landing every extra hit he could!
 
 His teammates were falling behind in both level and gold, but thanks to their sacrifices, his Desert Hunter’s level and gold weren’t any lower than the enemy’s. Without his ultimate, he had no advantage trading auto-attacks with Guardian Spirit, but once his ultimate was active, every auto-attack felt like a skill—the damage was nothing to scoff at!
 
@@ -354,15 +338,11 @@ Ling Suyu had never let him down.
 
 【System】 The enemy Child of Frost has been slain!
 
-【Feather killed igame’s jungler and saved the low-health support at the same time!
-
-Feather got a triple kill!】
+【Feather killed igame’s jungler and saved the low-health support at the same time! Feather got a triple kill!】
 
 Ah-Mu commentated excitedly as the chat flooded with “666,” while over on UH’s side, the team stared blankly at the battle unfolding on the livestream, suddenly at a loss for words.
 
-Just as Ling Suyu secured a triple kill, Yu He’s Double Phantom had just snatched the Dragon God when he was CC’d by the enemy mid-laner, Curse Master, using his second skill, “Hand of Hexes.” This was immediately followed by his first skill, “Malicious Infection,”
-
-his third skill, “Exploding Curse,” and his ultimate, “Curse of Evil”!
+Just as Ling Suyu secured a triple kill, Yu He’s Double Phantom had just snatched the Dragon God when he was CC’d by the enemy mid-laner, Curse Master, using his second skill, “Hand of Hexes.” This was immediately followed by his first skill, “Malicious Infection,” his third skill, “Exploding Curse,” and his ultimate, “Curse of Evil”!
 
 That burst of damage instantly wiped out Yu He’s Double Phantom’s health bar. He didn’t even have time to use his ultimate or Flash before he fell to the ground cleanly and decisively.
 

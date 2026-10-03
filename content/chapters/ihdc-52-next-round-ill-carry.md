@@ -59,13 +59,9 @@ In fact, it wasn’t just her. Even the viewers with the poorest game sense coul
 
 Fight collectively pushed the mid-lane minions all the way to the enemy’s inner tower, and the tower’s health was wiped out by Desert Hunter’s terrifying auto-attack damage.
 
-The word “WIN” appeared on everyone’s screens on Fight’s side as the commentators’
+The word “WIN” appeared on everyone’s screens on Fight’s side as the commentators’ excited voices and the audience’s cheers rose and fell in unison.
 
-excited voices and the audience’s cheers rose and fell in unison.
-
-【Fight staged a comeback against the odds and secured the victory in the first
-
-round!】
+【Fight staged a comeback against the odds and secured the victory in the first round!】
 
 【Feather’s Desert Hunter was the ace of this game!】
 
@@ -83,9 +79,7 @@ On the other side, the UH starters, who were also watching the match, all had ab
 
 They opened their mouths slightly, wanting to say something, but couldn’t get a single word out.
 
-—Who let him use Desert Hunter! If he’d just properly stolen Guardian Spirit, would he be
-
-playing so miserably?
+—Who let him use Desert Hunter! If he’d just properly stolen Guardian Spirit, would he be playing so miserably?
 
 He indeed picked Desert Hunter, and indeed went up against Guardian Spirit. Not only did he pick it, but he dominated the fight. Not only did he dominate, he completely crushed his opponent!
 
@@ -95,9 +89,7 @@ And he really did get a pentakill, even while his team was behind in gold. He us
 
 Their words were like a stream of toxic jinxes—they’d actually managed to “jinx” Fight back to life despite their obvious early-game disadvantage, and they’d somehow turned a match that seemed impossible to win into a victory.
 
-And this victory turned every taunt they’d hurled at Ling Suyu into a slap in their own faces.
-
-The louder the crowd cheered for Fight, the more it stung.
+And this victory turned every taunt they’d hurled at Ling Suyu into a slap in their own faces. The louder the crowd cheered for Fight, the more it stung.
 
 “Still not willing to admit it?”
 
@@ -125,7 +117,7 @@ It wasn’t easy to bring this group together.
 
 Jiang Hao used to quite enjoy the feeling of being admired and supported by this group, but after watching the match between Fight and igame, he had to admit that he was a bit envious of Ling Suyu’s teammates.
 
-A team with exceptional teamwork, where every member voluntarily protected the marksman —what marksman wouldn’t dream of being part of that?
+A team with exceptional teamwork, where every member voluntarily protected the marksman—what marksman wouldn’t dream of being part of that?
 
 Perhaps because of their unconditional admiration for Jiang Hao, even though his earlier remark sounded like he was placating a child, his teammates accepted it very easily and even added their own thoughts.
 
@@ -167,9 +159,7 @@ The top laner was a die-hard fan of Jiang Hao, because Jiang Hao never let him d
 
 The mid laner had always looked up to Jiang Hao, because when Jiang Hao was on the field, he could clearly feel that the team was dealing damage, unlike when Ling Suyu was on the field, when they couldn’t kill the enemy no matter what and instead kept getting crushed by them.
 
-Although the support player wasn’t much of a talker, he’d settled on Jiang Hao early on. With Jiang Hao around, he’d simply do whatever Jiang Hao told him to do. Once he got used to it, he couldn’t be bothered to think for himself. In contrast, playing support for Ling Suyu was a real headache for him, because he could never figure out what Ling Suyu was thinking.
-
-Since Ling Suyu didn’t say anything, he didn’t ask either, and their bot lane interactions were as awkward as a first blind date with a stranger.
+Although the support player wasn’t much of a talker, he’d settled on Jiang Hao early on. With Jiang Hao around, he’d simply do whatever Jiang Hao told him to do. Once he got used to it, he couldn’t be bothered to think for himself. In contrast, playing support for Ling Suyu was a real headache for him, because he could never figure out what Ling Suyu was thinking. Since Ling Suyu didn’t say anything, he didn’t ask either, and their bot lane interactions were as awkward as a first blind date with a stranger.
 
 “I…need to use the washroom,” Cui Rao said, suddenly leaving the room.
 
@@ -177,9 +167,7 @@ He couldn’t stand the MVP close-up animation on the screen—it was so glaring
 
 The commentators’ voices were also driving him absolutely crazy.
 
-【The referees have awarded this game’s MVP to Feather! I don’t think there’s much
-
-debate here—Feather’s pentakill comeback directly decided the outcome of this match…】
+【The referees have awarded this game’s MVP to Feather! I don’t think there’s much debate here—Feather’s pentakill comeback directly decided the outcome of this match…】
 
 As Cui Rao walked away, ZhiZhi’s voice grew fainter and fainter.
 
@@ -207,9 +195,7 @@ To his utter surprise, just as he successfully sidestepped Cui Rao and headed ou
 
 Ling Suyu paused in his tracks: “Pretty good.”
 
-“Oh, that’s good,” Cui Rao replied casually, then picked a random stall and slipped inside.
-
-Once inside, he fidgeted, running his fingers through his hair—what was he doing?!
+“Oh, that’s good,” Cui Rao replied casually, then picked a random stall and slipped inside. Once inside, he fidgeted, running his fingers through his hair—what was he doing?!
 
 Seeing that Cui Rao had gone in, Ling Suyu didn’t bother with him anymore. He quickly left the restroom and returned to the competition room.
 
@@ -231,9 +217,7 @@ Although the jungler he’d just run into routinely threatened to beat him up, h
 
 On the contrary, it was Jiang Hao who would get physical to stand up for his teammates.
 
-At the White Fox Cup, Jiang Hao wasn’t suspended for intentionally picking a fight. It was because, at the hotel where they were staying, some bored jerk in the lobby mocked them for playing esports, saying it was a waste of time. Cui Rao retorted a few times, only to have the guy grab his collar and threaten him. Jiang Hao punched the man to rescue Cui Rao.
-
-The man, holding a grudge, reported the incident to the White Fox Cup organizers, and then…
+At the White Fox Cup, Jiang Hao wasn’t suspended for intentionally picking a fight. It was because, at the hotel where they were staying, some bored jerk in the lobby mocked them for playing esports, saying it was a waste of time. Cui Rao retorted a few times, only to have the guy grab his collar and threaten him. Jiang Hao punched the man to rescue Cui Rao. The man, holding a grudge, reported the incident to the White Fox Cup organizers, and then…
 
 Ling Suyu snapped out of his reverie and only then remembered to answer Tang Yu’an’s question: “It was nothing. We just chatted for a bit, there wasn’t any conflict.”
 
@@ -297,7 +281,7 @@ The upside was that Ling Suyu’s gold finally caught up thanks to those three w
 
 However, at the 16-minute mark, Yu He was killed while solo pushing the top lane. Fight thought they could seize the opportunity to take down the second Divine Sunbird, but although they managed to secure it, they suffered a 1-for-3 exchange, with only Ling Suyu escaping on low health thanks to two dashes and a Flash.
 
-On Fight’s side, everyone except Ling Suyu was down, so naturally, no one was left to take the Divine Sunbird.
+On Fight’s side, everyone except Ling Suyu was down, so naturally, no one was left to take  the Divine Sunbird.
 
 igame seized the opportunity to take down two more of Fight’s towers.
 
@@ -339,9 +323,7 @@ Chen Jie smacked him right on the head: “You’ve actually got the nerve to sa
 
 “I didn’t screw us over, I did my best,” Yu He said, sticking out his chin. “I think.”
 
-Tang Yu’an couldn’t help but chuckle as he withdrew his hand from Ling Suyu’s head:
-
-“Victory is everyone’s glory, and defeat is everyone’s fault—not a single person can escape blame. Instead of beating ourselves up now, let’s review the game thoroughly, learn from our mistakes, and win it back in the next match!”
+Tang Yu’an couldn’t help but chuckle as he withdrew his hand from Ling Suyu’s head: “Victory is everyone’s glory, and defeat is everyone’s fault—not a single person can escape blame. Instead of beating ourselves up now, let’s review the game thoroughly, learn from our mistakes, and win it back in the next match!”
 
 Dou Jiayan: “Mm-hmm!”
 
