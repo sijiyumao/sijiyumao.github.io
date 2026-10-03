@@ -8,6 +8,60 @@ from xml.sax.saxutils import escape
 
 ROOT = Path(__file__).resolve().parents[1]
 
+SITE_URL = "https://sijiyumao.github.io/"
+
+def build_rss(chapters, novel_paths):
+    novels = {}
+    for relative_path in novel_paths:
+        try:
+            data = json.loads((ROOT / relative_path).read_text(encoding="utf-8"))
+            if data.get("id"):
+                novels[data["id"]] = data
+        except Exception as exc:
+            print(f"Skipping RSS novel metadata {relative_path}: {exc}")
+
+    public = [ch for ch in chapters if not ch.get("draft")]
+    public.sort(key=lambda ch: (str(ch.get("date", "")), int(ch.get("chapter_number", 0))), reverse=True)
+
+    items = []
+    for ch in public:
+        novel = novels.get(ch["novel"], {})
+        novel_title = str(novel.get("title", ch["novel"]))
+        number = ch["chapter_number"]
+        chapter_title = str(ch["title"])
+        title = f"{novel_title} — Chapter {number}: {chapter_title}"
+        link = f"{SITE_URL}#read/{ch['novel']}/{number}"
+        try:
+            dt = datetime.strptime(str(ch["date"]), "%Y-%m-%d").replace(tzinfo=timezone.utc)
+            pub_date = format_datetime(dt)
+        except ValueError:
+            pub_date = format_datetime(datetime.now(timezone.utc))
+        items.append(
+            "    <item>\n"
+            f"      <title>{escape(title)}</title>\n"
+            f"      <link>{escape(link)}</link>\n"
+            f"      <guid isPermaLink=\"true\">{escape(link)}</guid>\n"
+            f"      <pubDate>{escape(pub_date)}</pubDate>\n"
+            "    </item>"
+        )
+
+    rss = (
+        "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n"
+        "<rss version=\"2.0\">\n"
+        "  <channel>\n"
+        "    <title>Yumao Novels — New Chapters</title>\n"
+        f"    <link>{SITE_URL}</link>\n"
+        "    <description>New chapter releases from Yumao Novels.</description>\n"
+        "    <language>en</language>\n"
+        + ("\n".join(items) + "\n" if items else "")
+        + "  </channel>\n"
+        "</rss>\n"
+    )
+    feed = ROOT / "feed.xml"
+    feed.write_text(rss, encoding="utf-8")
+    print(f"Wrote {feed.relative_to(ROOT)} with {len(items)} public chapter items.")
+
+
 def files_under(relative_dir, suffix):
     base = ROOT / relative_dir
     if not base.exists():
@@ -70,3 +124,5 @@ out.write_text(
     encoding="utf-8",
 )
 print(f"Wrote {out.relative_to(ROOT)} with {len(manifest['novels'])} novels and {len(manifest['chapters'])} chapter records.")
+
+build_rss(chapters, manifest["novels"])
