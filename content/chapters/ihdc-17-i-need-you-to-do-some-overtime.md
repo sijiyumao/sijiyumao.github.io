@@ -3,7 +3,7 @@ title: "I Need You to Do Some Overtime."
 novel: ihdc
 chapter_number: 17
 date: 2026-10-03
-draft: true
+draft: false
 ---
 As the New Year was only a few days away, many shops were closed, and deserted with few people in sight.
 
