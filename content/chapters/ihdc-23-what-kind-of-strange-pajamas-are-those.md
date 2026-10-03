@@ -3,7 +3,7 @@ title: "What Kind of Strange Pajamas Are Those?"
 novel: ihdc
 chapter_number: 23
 date: 2026-10-03
-draft: true
+draft: false
 ---
 After Ling Suyu fell asleep, he dreamt.
 
