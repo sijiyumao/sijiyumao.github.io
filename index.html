@@ -188,7 +188,7 @@ footer{padding:34px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 </div></footer>
 
 <script>
-let novels=[], filter="all";
+let novels=[], filter="all", chapterCache=new Map();
 
 function escapeHtml(v){return String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));}
 
@@ -281,8 +281,7 @@ async function loadContent(){
   try{
     const manifest=await fetch("./content/manifest.json",{cache:"no-store"}).then(r=>r.json());
     const novelData=await Promise.all(manifest.novels.map(p=>fetch("./"+p,{cache:"no-store"}).then(r=>r.json())));
-    const chapterData=(await Promise.all(manifest.chapters.map(p=>fetch("./"+p,{cache:"no-store"}).then(r=>r.text()).then(parseChapter))))
-      .filter(Boolean).filter(c=>!c.draft);
+    const chapterData=(manifest.chapters||[]).filter(c=>c&&c.path&&!c.draft);
     novels=novelData.map(n=>({...n,chapters:chapterData.filter(c=>c.novel===n.id).sort((a,b)=>a.chapter_number-b.chapter_number)}));
   }catch(err){console.error(err); novels=[];}
   renderNovels(); renderRecent(); route();
@@ -381,14 +380,12 @@ document.getElementById("fontUp").onclick=()=>{readerFontSize=Math.min(1.45,read
 document.getElementById("backToTop").onclick=()=>window.scrollTo({top:0,behavior:"smooth"});
 window.addEventListener("scroll",updateReadingProgress,{passive:true});
 window.addEventListener("resize",updateReadingProgress);
-function openChapter(id,num){
+async function openChapter(id,num){
   const n=novels.find(x=>x.id===id), c=n?.chapters?.find(x=>String(x.chapter_number)===String(num)); if(!n||!c)return;
   document.getElementById("readerNovel").textContent=n.title;
   document.getElementById("readerTitle").textContent=c.title;
   document.getElementById("readerNumber").textContent=`Chapter ${c.chapter_number} · ${c.date}`;
-  document.getElementById("prose").innerHTML=renderMarkdown(c.body,c.translator_notes);
-  applyReaderFontSize();
-  requestAnimationFrame(updateReadingProgress);
+  document.getElementById("prose").innerHTML='<p class="meta" style="text-align:center">Loading chapter…</p>';
   const idx=n.chapters.indexOf(c),prev=n.chapters[idx-1],next=n.chapters[idx+1];
   const pb=document.getElementById("prev"), nb=document.getElementById("next");
   pb.style.visibility=prev?"visible":"hidden"; nb.style.visibility=next?"visible":"hidden";
@@ -396,6 +393,23 @@ function openChapter(id,num){
   nb.onclick=()=>next&&(location.hash=`#read/${encodeURIComponent(n.id)}/${next.chapter_number}`);
   document.getElementById("backNovel").href=`#novel/${encodeURIComponent(n.id)}`;
   showPage("readerPage");
+  try{
+    let full=chapterCache.get(c.path);
+    if(!full){
+      const response=await fetch("./"+c.path);
+      if(!response.ok) throw new Error(`Chapter request failed: ${response.status}`);
+      full=parseChapter(await response.text());
+      if(!full) throw new Error("Chapter file could not be parsed.");
+      chapterCache.set(c.path,full);
+    }
+    if(location.hash!==`#read/${encodeURIComponent(id)}/${num}`) return;
+    document.getElementById("prose").innerHTML=renderMarkdown(full.body,full.translator_notes);
+    applyReaderFontSize();
+    requestAnimationFrame(updateReadingProgress);
+  }catch(err){
+    console.error(err);
+    document.getElementById("prose").innerHTML='<p class="empty">This chapter could not be loaded. Please refresh the page and try again.</p>';
+  }
 }
 function route(){
   const h=location.hash.replace("#","");
