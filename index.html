@@ -213,7 +213,7 @@ function scrollToReaderAnchor(id){
 function renderMarkdown(md){
   const notes=new Map(), bodyLines=[];
   md.split("\n").forEach(line=>{
-    const m=line.match(/^\[\^([^\]]+)\]:\s*(.*)$/);
+    const m=line.match(/^\[\^([^\]]+)\]\s*:?\s+(.+)$/);
     if(m) notes.set(m[1],m[2]);
     else bodyLines.push(line);
   });
