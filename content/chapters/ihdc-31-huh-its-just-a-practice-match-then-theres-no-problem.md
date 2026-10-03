@@ -3,7 +3,7 @@ title: Huh? It’s Just a Practice Match? Then There’s No Problem.
 novel: ihdc
 chapter_number: 31
 date: 2026-10-03
-draft: true
+draft: false
 ---
 Since their practice match against YJ was scheduled for 1:00 PM, the members of Fight all woke up before 11:00 AM the next day. They wanted to eat early so they could play a game or two to get their bearings before facing off against YJ.
 
