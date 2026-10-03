@@ -3,7 +3,7 @@ title: "How Was Tang Yu’an Good at Everything!"
 novel: ihdc
 chapter_number: 21
 date: 2026-10-03
-draft: true
+draft: false
 ---
 In the future, let me protect you.
 
