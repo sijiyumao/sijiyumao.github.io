@@ -3,7 +3,7 @@ title: "Next Time, I’ll Sing Just for You"
 novel: ihdc
 chapter_number: 56
 date: 2026-10-03
-draft: true
+draft: false
 translator_notes:
   - number: 1
     note: "茉莉 (mò lì), meaning jasmine. Although it’s possible for people to actually have this as a given name, in this case it seems to be a stage name."
