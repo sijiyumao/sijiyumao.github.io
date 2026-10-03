@@ -3,7 +3,7 @@ title: "Surprised? Unexpected?"
 novel: ihdc
 chapter_number: 12
 date: 2026-10-03
-draft: true
+draft: false
 translator_notes:
   - number: 1
     note: "On Weibo, posts are structured kind of like Reddit threads, vertically like an apartment building. So the original poster is the ‘building owner,’ which I’ve translated as OP for simplicity’s sake, and people tend to refer to replies above them as ‘upstairs.’"
