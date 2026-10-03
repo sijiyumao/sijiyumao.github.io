@@ -3,7 +3,7 @@ title: "The Captain’s Bullsh*tting Again!"
 novel: ihdc
 chapter_number: 45
 date: 2026-10-03
-draft: true
+draft: false
 ---
 The match between Fight and GQ was officially underway!
 
