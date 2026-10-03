@@ -3,7 +3,7 @@ title: "It’s So Annoying When They Run Off After Winning!"
 novel: ihdc
 chapter_number: 35
 date: 2026-10-03
-draft: true
+draft: false
 ---
 With only a half-hour break, it was impossible to thoroughly review all five games.
 
