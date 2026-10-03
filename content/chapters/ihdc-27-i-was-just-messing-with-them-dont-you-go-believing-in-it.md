@@ -3,7 +3,7 @@ title: "I Was Just Messing with Them, Don’t You Go Believing in It…"
 novel: ihdc
 chapter_number: 27
 date: 2026-10-03
-draft: true
+draft: false
 ---
 “We underestimated Feather as a player.”
 
