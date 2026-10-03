@@ -31,13 +31,13 @@ Although on paper it was only sharing some thoughts, those who paid attention to
 
 As for why YJ got to go first, it was likely because they were more popular. After all, they were a team that once had the chance to compete in the international finals. 
 
-As Ling Suyu glanced towards the direction the announcer was heading, he spotted the members of YJ sharing a look among each other. In the end, their captain, the support Cheng Cheng, was the one who took the microphone: \[Um…..We’re pretty happy right now. How should I say this? Last month, we just got back from overseas, and just last week, we were competing in the All-Stars tournament, so we were pretty tired today. We didn’t want too tiring of a match, but since we met UH in the first match, our pressure has decreased a lot.]
+As Ling Suyu glanced towards the direction the announcer was heading, he spotted the members of YJ sharing a look among each other. In the end, their captain, the support Cheng Cheng, was the one who took the microphone: 【Um…..We’re pretty happy right now. How should I say this? Last month, we just got back from overseas, and just last week, we were competing in the All-Stars tournament, so we were pretty tired today. We didn’t want too tiring of a match, but since we met UH in the first match, our pressure has decreased a lot.】
 
 As soon as he said this, there were both boos and roars from the crowd. 
 
 Ling Suyu raised his eyebrows. He didn’t expect that, although YJ’s captain looked steady and reliable, the words from his mouth were quite harsh. 
 
-Even more unexpectedly, as soon as he finished speaking, the microphone in his hand was snatched by the marksman Ma Mingxi beside him. He held the mic to his mouth and shouted at Ling Suyu: \[Feather, long time no see! If it weren’t for your team’s marksman being banned from the competition last night, you wouldn’t even be here today, right? After so many years of not competing, I hope you haven’t gotten rusty. Beware of dying at my hands before even reaching level 6!]
+Even more unexpectedly, as soon as he finished speaking, the microphone in his hand was snatched by the marksman Ma Mingxi beside him. He held the mic to his mouth and shouted at Ling Suyu: 【Feather, long time no see! If it weren’t for your team’s marksman being banned from the competition last night, you wouldn’t even be here today, right? After so many years of not competing, I hope you haven’t gotten rusty. Beware of dying at my hands before even reaching level 6!】
 
 As these words fell, an even louder round of boos sounded, but some also whistled. 
 
@@ -65,7 +65,7 @@ It wasn’t that Ling Suyu’s response was brilliant, but rather that YJ’s un
 
 Nevertheless, this was an e-sports competition, and in the end everything relied on strength.
 
-【Through blood and sweat, who will be victorious! Welcome to the professional competition livestream of “Glorious Heroes”’s White Fox Cup! I’m commentator Ah-Mu!】
+【Through blood and sweat, who will be victorious! Welcome to the professional competition livestream of “Glorious Heroes”’s White Fox Cup! I’m commentator *Ah-Mu*[^1]!】
 
 【I’m your commentator ZhiZhi~】
 
@@ -115,11 +115,11 @@ But with Guardian Spirit, he could only steel himself and hope to kill the enemy
 
 Unless his support had the ability to protect him. 
 
-【UH’s first hero is Guardian Spirit, let’s see what YJ chooses!】Just as AhMu said this, YJ immediately locked onto Abyssal Lord. 
+【UH’s first hero is Guardian Spirit, let’s see what YJ chooses!】Just as Ah-Mu said this, YJ immediately locked onto Abyssal Lord. 
 
 【Oh my, YJ’s first choice is a support!】ZhiZhi exclaimed in surprise, but quickly reacted, 【Do they not want UH to take this support hero?】
 
-【Abyssal Lord’s shield synergizes well with Guardian Spirit’s explosive damage, and would indeed be hard to deal with.】 AhMu clarified YJ’s strategy.
+【Abyssal Lord’s shield synergizes well with Guardian Spirit’s explosive damage, and would indeed be hard to deal with.】 Ah-Mu clarified YJ’s strategy.
 
 Ling Suyu pursed his lips when he saw what the other side chose, but didn’t say anything. 
 
@@ -137,11 +137,11 @@ Soon, Ling Suyu and Wen Xu made their way into the bottom lane. At the same time
 
 【As the match begins, let’s first take a look at the bottom lane, as that’s what everyone’s curious about!】
 
-As AhMu said this, the director turned the livestream perspective to the bottom lane, only to see Ling Suyu not being stingy with his skills as he cleared minions, with his support also using skills, leaving the last blow for Ling Suyu.
+As Ah-Mu said this, the director turned the livestream perspective to the bottom lane, only to see Ling Suyu not being stingy with his skills as he cleared minions, with his support also using skills, leaving the last blow for Ling Suyu.
 
 【Um? UH’s support’s first skill was a damage buff and not a heal, do they want to compete for level 2?】
 
-AhMu, as a professional commentator, immediately recognized Ling Suyu’s strategy. 
+Ah-Mu, as a professional commentator, immediately recognized Ling Suyu’s strategy. 
 
 【YJ’s Mingxi is being very aggressive today, continuously using skills to chip away at the opponent’s heroes. Nevertheless, Feather’s moves aren’t bad, he’s dodged them all…oh f*ck!】
 
