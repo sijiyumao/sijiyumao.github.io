@@ -361,7 +361,7 @@
       "novel": "ihdc",
       "chapter_number": 5,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-50-you-upset-our-marksman-are-you-looking-to-die.md",
@@ -449,7 +449,7 @@
       "novel": "ihdc",
       "chapter_number": 6,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-60-the-quarterfinals-have-officially-begun.md",
@@ -521,7 +521,7 @@
       "novel": "ihdc",
       "chapter_number": 7,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-8-quadra-kill-godlike.md",
@@ -529,7 +529,7 @@
       "novel": "ihdc",
       "chapter_number": 8,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-9-id-have-knocked-your-head-off.md",
@@ -537,7 +537,7 @@
       "novel": "ihdc",
       "chapter_number": 9,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     }
   ]
 }
