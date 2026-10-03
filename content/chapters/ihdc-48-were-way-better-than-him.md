@@ -3,7 +3,7 @@ title: "We’re Way Better Than Him!"
 novel: ihdc
 chapter_number: 48
 date: 2026-10-03
-draft: true
+draft: false
 translator_notes:
   - number: 1
     note: "不是(bu shi), which in literal translation means ‘or not.’ It’s a piece of internet slang used kind of like the tone indicator /s for sarcasm."
