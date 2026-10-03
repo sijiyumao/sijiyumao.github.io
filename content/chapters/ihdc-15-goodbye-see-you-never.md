@@ -3,7 +3,7 @@ title: "Goodbye! See You Never!"
 novel: ihdc
 chapter_number: 15
 date: 2026-10-03
-draft: true
+draft: false
 ---
 As the distance between himself and Fight’s headquarters drew closer, the familiar voice of UH’s manager sounded from the phone: “Where are you right now?”
 
