@@ -1,5 +1,6 @@
 {
   "novels": [
+    "content/novels/ihdc.json",
     "content/novels/jade-after-snow.json",
     "content/novels/moonlit-teahouse.json",
     "content/novels/spring-in-september.json"
