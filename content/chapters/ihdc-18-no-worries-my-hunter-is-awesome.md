@@ -3,7 +3,7 @@ title: "No Worries, My Hunter Is Awesome!"
 novel: ihdc
 chapter_number: 18
 date: 2026-10-03
-draft: true
+draft: false
 ---
 Once the matchmaking was successful and they entered the game, the first phase was the ban phase.
 
