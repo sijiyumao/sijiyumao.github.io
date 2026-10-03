@@ -48,6 +48,36 @@ collections:
       - label: "Description"
         name: "desc"
         widget: "text"
+      - label: "Original Chinese Title"
+        name: "original_title"
+        widget: "string"
+        required: false
+        hint: "For translations. Leave blank for original Yumao novels."
+      - label: "Original Author"
+        name: "original_author"
+        widget: "string"
+        required: false
+      - label: "Translator"
+        name: "translator"
+        widget: "string"
+        required: false
+      - label: "Original Publication / Source"
+        name: "source"
+        widget: "string"
+        required: false
+        hint: "For example, the original publishing platform or source name."
+      - label: "Total Chapters"
+        name: "total_chapters"
+        widget: "number"
+        value_type: "int"
+        min: 1
+        required: false
+        hint: "Optional. Use the original novel's total chapter count if known."
+      - label: "Translator's Note"
+        name: "translator_note"
+        widget: "text"
+        required: false
+        hint: "Optional note shown on the novel page, not inside individual chapters."
       - label: "Cover Image"
         name: "cover"
         widget: "image"
