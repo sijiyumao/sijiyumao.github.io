@@ -282,7 +282,13 @@ function openNovel(id){
     ["Original length",n.total_chapters?String(n.total_chapters)+" chapters":""]
   ].filter(([,value])=>value);
   const detailsEl=document.getElementById("novelDetails");
-  detailsEl.innerHTML=details.map(([label,value])=>`<div class="novel-detail"><strong>${escapeHtml(label)}</strong>${escapeHtml(value)}</div>`).join("");
+  detailsEl.innerHTML=details.map(([label,value])=>{
+    const safeValue=escapeHtml(value);
+    const displayed=(label==="Original source"&&/^https?:\/\//i.test(String(value)))
+      ?`<a href="${safeValue}" target="_blank" rel="noopener noreferrer">${safeValue}</a>`
+      :safeValue;
+    return `<div class="novel-detail"><strong>${escapeHtml(label)}</strong>${displayed}</div>`;
+  }).join("");
   detailsEl.style.display=details.length?"grid":"none";
   const translatorNote=document.getElementById("novelTranslatorNote");
   translatorNote.innerHTML=n.translator_note?`<strong>Translator's note</strong><br>${escapeHtml(n.translator_note).replace(/\n/g,"<br>")}`:"";
