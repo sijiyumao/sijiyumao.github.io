@@ -3,7 +3,7 @@ title: "It’s All About Seizing the Right Moment!"
 novel: ihdc
 chapter_number: 32
 date: 2026-10-03
-draft: true
+draft: false
 ---
 By the time Tang Yu'an returned to their base, he was down to his last bit of health, and Ling Suyu wasn’t in great shape either. The two of them sneaked their way over to a hidden corner before pressing recall, wary of enemy junglers coming to gank them.
 
