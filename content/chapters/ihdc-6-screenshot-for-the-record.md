@@ -3,7 +3,7 @@ title: Screenshot For the Record!
 novel: ihdc
 chapter_number: 6
 date: 2026-10-03
-draft: true
+draft: false
 ---
 The week-long “White Fox Cup” soon came to an end, and the final champion was Winne, with YJ as the runner-up.
 
