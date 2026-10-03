@@ -3,7 +3,7 @@ title: "Are You Interested in Him?"
 novel: ihdc
 chapter_number: 29
 date: 2026-10-03
-draft: true
+draft: false
 ---
 As the food was held up to his mouth, Ling Suyu opened his mouth almost instinctively. Only after he’d finished eating did he realize what had happened, and he shot a bewildered look at Tang Yu’an.
 
