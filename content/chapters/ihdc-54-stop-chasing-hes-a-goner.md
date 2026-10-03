@@ -3,7 +3,7 @@ title: "Stop Chasing, He’s a Goner."
 novel: ihdc
 chapter_number: 54
 date: 2026-10-03
-draft: true
+draft: false
 translator_notes:
   - number: 1
     note: "a pop culture reference to a type of martial arts footwork, where one is supposed to be light as the waves"
