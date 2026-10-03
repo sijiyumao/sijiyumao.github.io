@@ -3,9 +3,37 @@
     "content/novels/ihdc.json"
   ],
   "chapters": [
-    "content/chapters/ihdc-1-guardian-spirit-got-first-blood.md",
-    "content/chapters/ihdc-2-this-marksman-is-just-a-coward.md",
-    "content/chapters/ihdc-3-double-kill-peerless.md",
-    "content/chapters/ihdc-4-thrilling.md"
+    {
+      "path": "content/chapters/ihdc-1-guardian-spirit-got-first-blood.md",
+      "title": "Guardian Spirit Got First Blood!",
+      "novel": "ihdc",
+      "chapter_number": 1,
+      "date": "2026-10-02",
+      "draft": false
+    },
+    {
+      "path": "content/chapters/ihdc-2-this-marksman-is-just-a-coward.md",
+      "title": "This Marksman is Just a Coward!",
+      "novel": "ihdc",
+      "chapter_number": 2,
+      "date": "2026-10-02",
+      "draft": false
+    },
+    {
+      "path": "content/chapters/ihdc-3-double-kill-peerless.md",
+      "title": "Double Kill! Peerless!",
+      "novel": "ihdc",
+      "chapter_number": 3,
+      "date": "2026-10-02",
+      "draft": false
+    },
+    {
+      "path": "content/chapters/ihdc-4-thrilling.md",
+      "title": "Thrilling!",
+      "novel": "ihdc",
+      "chapter_number": 4,
+      "date": "2026-10-02",
+      "draft": false
+    }
   ]
 }
