@@ -3,7 +3,7 @@ title: "Pentakill! Even the Gods Bow Down!"
 novel: ihdc
 chapter_number: 26
 date: 2026-10-03
-draft: true
+draft: false
 ---
 Ling Suyu had thought Dou Jiayan was just speaking casually, but to his surprise, after saying that, he actually ran over to his side.
 
