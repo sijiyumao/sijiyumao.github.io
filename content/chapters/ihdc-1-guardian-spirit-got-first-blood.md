@@ -208,3 +208,7 @@ This substitute was quite interesting.
 “Huh? What happened to Ma Mingxi?”
 
 Tang Yu’an smiled: “You’ll know if you open the comments.”
+
+...
+
+[^1]: The 'Ah-' in Ah-Mu's name is the prefix 阿, usually attached to one's name to create a nickname, or in this case, a stage name. 
