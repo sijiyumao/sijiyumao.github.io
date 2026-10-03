@@ -3,7 +3,7 @@ title: "Don’t Go Wild at Night"
 novel: ihdc
 chapter_number: 16
 date: 2026-10-03
-draft: true
+draft: false
 ---
 The hallway within Fight’s club building had black floors and walls, but as Ling Suyu followed Tang Yu’an’s line of sight towards the dorm room, once the fluorescent light turned on, a bright room appeared before his eyes.
 
