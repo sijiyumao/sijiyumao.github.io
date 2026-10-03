@@ -3,7 +3,7 @@ title: "No One Can Stop Desert Hunter!"
 novel: ihdc
 chapter_number: 51
 date: 2026-10-03
-draft: true
+draft: false
 translator_notes:
   - number: 1
     note: "One of Aesop’s Fables, which tells the story of a farmer who gave warmth to a freezing snake, only to have the snake bite and poison him to death upon waking up. The moral of the story is that kindness towards evil will only be met with betrayal."
