@@ -3,7 +3,7 @@ title: "A Pretty Strange Feeling"
 novel: ihdc
 chapter_number: 61
 date: 2026-10-03
-draft: true
+draft: false
 translator_notes:
   - number: 1
     note: "this is a literal English translation of his name, 风浪"
