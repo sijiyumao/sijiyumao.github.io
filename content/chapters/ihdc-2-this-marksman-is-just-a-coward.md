@@ -7,9 +7,9 @@ draft: false
 ---
 You’ll know if you open the comments?
 
-Intrigued by his captain’s words, Dou Jiayan quickly finished getting his water and returned to his computer. Opening the live comments, he was greeted with a flood of 【666】as well as—
+Intrigued by his captain’s words, Dou Jiayan quickly finished getting his water and returned to his computer. Opening the live comments, he was greeted with a flood of 【*666*[^1]】as well as—
 
-【Does Ma Mingxi’s face hurt?】
+【Does Ma Mingxi’s *face hurt*[^2]?】
 
 【He really died before reaching level 6, is this was they call a prophecy coming true?】
 
@@ -178,3 +178,8 @@ But this time, it felt like they had a chance!
 “Feather, I’ll trust you just this once!” UH’s jungler Cui Rao said, “You bait, I’ll catch them. If you dare play around with me, once this match ends, I’ll beat you up in the bathroom!”
 
 Ling Suyu thought for half a second, and in the end…..he grit his teeth and replied: “Okay, if I won’t die.”
+
+...
+
+[^1] Chinese internet slang meaning something along the lines of "awesome!"
+[^2] slang used when someone gets their comeuppance, usually in the context where they underestimate their opponent.
