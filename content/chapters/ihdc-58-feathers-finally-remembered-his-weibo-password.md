@@ -3,7 +3,7 @@ title: "Feather’s Finally Remembered His Weibo Password!"
 novel: ihdc
 chapter_number: 58
 date: 2026-10-03
-draft: true
+draft: false
 ---
 Sure enough, once Tang Yu’an said, “Don’t worry,” Ling Suyu truly didn’t have to worry at all.
 
