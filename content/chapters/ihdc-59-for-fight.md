@@ -3,7 +3,7 @@ title: "For Fight"
 novel: ihdc
 chapter_number: 59
 date: 2026-10-03
-draft: true
+draft: false
 translator_notes:
   - number: 1
     note: "The character for ‘love,’ 爱 (ai), is pronounced in Mandarin like the letter ‘i,’ so technically igame’s name is supposed to mean something along the lines of “love the game” or “love to game”"
