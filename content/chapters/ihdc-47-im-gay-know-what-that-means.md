@@ -3,7 +3,7 @@ title: "I’m Gay. Know What That Means?"
 novel: ihdc
 chapter_number: 47
 date: 2026-10-03
-draft: true
+draft: false
 ---
 After the debriefing ended, Chen Jie went to the restroom.
 
