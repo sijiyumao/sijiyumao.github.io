@@ -3,7 +3,7 @@ title: "In Order to Win, I Can’t Die"
 novel: ihdc
 chapter_number: 22
 date: 2026-10-03
-draft: true
+draft: false
 ---
 Ling Suyu hadn’t shut the door to his room. Tang Yu’an quietly walked to the entrance and looked inside, only to see the innocent penguin cupping his phone with both hands. He was sitting on his bed, intently waiting for a response.
 
