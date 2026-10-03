@@ -3,7 +3,7 @@ title: "A Corpse Is Trying to Solo-Carry"
 novel: ihdc
 chapter_number: 64
 date: 2026-10-03
-draft: true
+draft: false
 translator_notes:
   - number: 1
     note: "禁止套娃 (jin zhi tao wa), in reference to Russian matryoshka dolls that have increasingly smaller dolls nested inside one another. Basically, it means to stop an endless cycle of self-reasoning. The way I understand it, it’s like preventing a form of meaningless infinite regress"
