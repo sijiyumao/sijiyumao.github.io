@@ -183,6 +183,11 @@ function inlineMd(t){
     .replace(/~~(.+?)~~/g,"<del>$1</del>")
     .replace(/\[([^\]]+)\]\((https?:\/\/[^)]+)\)/g,'<a href="$2" rel="noopener">$1</a>');
 }
+function scrollToReaderAnchor(id){
+  const el=document.getElementById(id);
+  if(el) el.scrollIntoView({behavior:"smooth",block:"center"});
+  return false;
+}
 function renderMarkdown(md){
   const notes=new Map(), bodyLines=[];
   md.split("\n").forEach(line=>{
@@ -215,7 +220,7 @@ function renderMarkdown(md){
     const safe=safeFootnoteId(id);
     const backlinks=Array.from({length:refCounts[id]||1},(_,i)=>{
       const suffix=(refCounts[id]||1)>1?` ${i+1}`:"";
-      return `<a class="footnote-back" href="#fnref-${safe}-${i+1}" aria-label="Back to note reference${suffix}">↩</a>`;
+      return `<a class="footnote-back" href="#" onclick="return scrollToReaderAnchor(\'fnref-${safe}-${i+1}\')" aria-label="Back to note reference${suffix}">↩</a>`;
     }).join("");
     return `<li id="fn-${safe}"><p>${inlineMd(text)}</p>${backlinks}</li>`;
   }).join("");
