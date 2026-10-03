@@ -193,6 +193,23 @@ footer{padding:34px 0;border-top:1px solid var(--line);color:var(--muted);font-s
 let novels=[], filter="all", chapterCache=new Map();
 
 function escapeHtml(v){return String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#039;"}[c]));}
+function safeHttpUrl(v){
+  try{
+    const u=new URL(String(v??""),location.href);
+    return (u.protocol==="http:"||u.protocol==="https:")?u.href:"";
+  }catch{return "";}
+}
+function safeContentPath(v,prefix){
+  const s=String(v??"").replace(/^\.\//,"");
+  return s.startsWith(prefix)&&!s.includes("..")&&!/[?#\\]/.test(s)?s:"";
+}
+function safeCoverUrl(v){
+  const s=String(v??"").trim();
+  if(!s)return "";
+  if(/^https?:\/\//i.test(s))return safeHttpUrl(s);
+  if(s.startsWith("/")&&!s.includes("..")&&!/[\\]/.test(s))return s;
+  return "";
+}
 
 function parseChapter(text){
   const m=text.match(/^---\s*\n([\s\S]*?)\n---\s*\n?([\s\S]*)$/);
@@ -282,7 +299,8 @@ function renderMarkdown(md,structuredNotes=[]){
 async function loadContent(){
   try{
     const manifest=await fetch("./content/manifest.json",{cache:"no-store"}).then(r=>r.json());
-    const novelData=await Promise.all(manifest.novels.map(p=>fetch("./"+p,{cache:"no-store"}).then(r=>r.json())));
+    const novelPaths=(manifest.novels||[]).map(p=>safeContentPath(p,"content/novels/")).filter(Boolean);
+    const novelData=await Promise.all(novelPaths.map(p=>fetch("./"+p,{cache:"no-store"}).then(r=>r.json())));
     const chapterData=(manifest.chapters||[]).filter(c=>c&&c.path&&!c.draft);
     novels=novelData.map(n=>({...n,chapters:chapterData.filter(c=>c.novel===n.id).sort((a,b)=>a.chapter_number-b.chapter_number)}));
   }catch(err){console.error(err); novels=[];}
@@ -318,11 +336,12 @@ function renderRecent(){
 function openNovel(id){
   const n=novels.find(x=>x.id===id); if(!n)return;
   const novelCover=document.getElementById("novelCover");
-  novelCover.textContent=n.cover?"":n.title;
-  novelCover.style.backgroundImage=n.cover?`url("${String(n.cover).replace(/"/g,"%22")}")`:"";
-  novelCover.style.backgroundSize=n.cover?"cover":"";
-  novelCover.style.backgroundPosition=n.cover?"center":"";
-  novelCover.style.backgroundRepeat=n.cover?"no-repeat":"";
+  const coverUrl=safeCoverUrl(n.cover);
+  novelCover.textContent=coverUrl?"":n.title;
+  novelCover.style.backgroundImage=coverUrl?`url("${coverUrl.replace(/"/g,"%22")}")`:"";
+  novelCover.style.backgroundSize=coverUrl?"cover":"";
+  novelCover.style.backgroundPosition=coverUrl?"center":"";
+  novelCover.style.backgroundRepeat=coverUrl?"no-repeat":"";
   document.getElementById("novelTitle").textContent=n.title;
   document.getElementById("novelType").textContent=(n.type==="translation"?"CHINESE WEBNOVEL TRANSLATION":"ORIGINAL WEBNOVEL")+" · "+String(n.status).toUpperCase();
   document.getElementById("novelDesc").textContent=n.desc||"";
@@ -336,8 +355,9 @@ function openNovel(id){
   const detailsEl=document.getElementById("novelDetails");
   detailsEl.innerHTML=details.map(([label,value])=>{
     const safeValue=escapeHtml(value);
-    const displayed=(label==="Original source"&&/^https?:\/\//i.test(String(value)))
-      ?`<a href="${safeValue}" target="_blank" rel="noopener noreferrer">${safeValue}</a>`
+    const sourceUrl=label==="Original source"?safeHttpUrl(value):"";
+    const displayed=sourceUrl
+      ?`<a href="${escapeHtml(sourceUrl)}" target="_blank" rel="noopener noreferrer">${safeValue}</a>`
       :safeValue;
     return `<div class="novel-detail"><strong>${escapeHtml(label)}</strong>${displayed}</div>`;
   }).join("");
@@ -418,7 +438,9 @@ async function openChapter(id,num){
   try{
     let full=chapterCache.get(c.path);
     if(!full){
-      const response=await fetch("./"+c.path);
+      const chapterPath=safeContentPath(c.path,"content/chapters/");
+      if(!chapterPath) throw new Error("Invalid chapter path.");
+      const response=await fetch("./"+chapterPath);
       if(!response.ok) throw new Error(`Chapter request failed: ${response.status}`);
       full=parseChapter(await response.text());
       if(!full) throw new Error("Chapter file could not be parsed.");
