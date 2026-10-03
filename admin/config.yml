@@ -100,6 +100,19 @@ collections:
     summary: "Chapter {{chapter_number}} — {{title}}"
     slug: "{{novel}}-{{chapter_number}}-{{slug}}"
     sortable_fields: ["date", "title", "chapter_number"]
+    view_filters:
+      - label: "I'm Here, Don't Chicken Out"
+        field: "novel"
+        pattern: "ihdc"
+      - label: "Published"
+        field: "draft"
+        pattern: false
+      - label: "Drafts"
+        field: "draft"
+        pattern: true
+    view_groups:
+      - label: "Novel ID"
+        field: "novel"
     fields:
       - label: "Chapter Title"
         name: "title"
