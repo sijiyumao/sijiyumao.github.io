@@ -3,7 +3,7 @@ title: "We’re Going to Beat the Crap Out of Them to Avenge You!"
 novel: ihdc
 chapter_number: 49
 date: 2026-10-03
-draft: true
+draft: false
 ---
 UH’s starters had their phones confiscated, so they were currently unaware of what was happening online, but coach and manager were in the know.
 
