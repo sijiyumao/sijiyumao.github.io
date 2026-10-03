@@ -3,7 +3,7 @@ title: "You Upset Our Marksman, Are You Looking to Die?"
 novel: ihdc
 chapter_number: 50
 date: 2026-10-03
-draft: true
+draft: false
 translator_notes:
   - number: 1
     note: "The saying comes from “The Fox and the Grapes,” one of Aesop’s fables. The story is what it says on the tin; a fox who couldn’t reach high-hanging grapes decided that they weren’t worth it, convincing himself they must be sour. As its use here indicates, it’s a didactic tale about people who pretend to despise/belittle that which they are unable to reach"
