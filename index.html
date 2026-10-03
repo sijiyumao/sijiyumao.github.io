@@ -195,6 +195,19 @@ function parseChapter(text){
       meta[x[1].trim()]=v;
     }
   });
+  const fm=m[1].split("\n");
+  const notes=[];
+  let inNotes=false, currentNote=null;
+  fm.forEach(line=>{
+    if(/^translator_notes:\s*$/.test(line)){inNotes=true;return;}
+    if(inNotes&&/^\S/.test(line)){inNotes=false;currentNote=null;}
+    if(!inNotes)return;
+    let x=line.match(/^\s*-\s*number:\s*["']?(\d+)["']?\s*$/);
+    if(x){currentNote={number:Number(x[1]),note:""};notes.push(currentNote);return;}
+    x=line.match(/^\s*note:\s*(.*)$/);
+    if(x&&currentNote) currentNote.note=x[1].trim().replace(/^["']|["']$/g,"");
+  });
+  if(notes.length) meta.translator_notes=notes;
   meta.body=m[2].trim();
   return meta;
 }
@@ -210,8 +223,12 @@ function scrollToReaderAnchor(id){
   if(el) el.scrollIntoView({behavior:"smooth",block:"center"});
   return false;
 }
-function renderMarkdown(md){
-  const notes=new Map(), bodyLines=[];
+function renderMarkdown(md,structuredNotes=[]){
+  const notes=new Map();
+  (structuredNotes||[]).forEach(item=>{
+    if(item&&item.number!=null&&item.note) notes.set(String(item.number),String(item.note));
+  });
+  const bodyLines=[];
   md.split("\n").forEach(line=>{
     const m=line.match(/^\[\^([^\]]+)\]\s*:?\s+(.+)$/);
     if(m) notes.set(m[1],m[2]);
@@ -357,7 +374,7 @@ function openChapter(id,num){
   document.getElementById("readerNovel").textContent=n.title;
   document.getElementById("readerTitle").textContent=c.title;
   document.getElementById("readerNumber").textContent=`Chapter ${c.chapter_number} · ${c.date}`;
-  document.getElementById("prose").innerHTML=renderMarkdown(c.body);
+  document.getElementById("prose").innerHTML=renderMarkdown(c.body,c.translator_notes);
   applyReaderFontSize();
   requestAnimationFrame(updateReadingProgress);
   const idx=n.chapters.indexOf(c),prev=n.chapters[idx-1],next=n.chapters[idx+1];
