@@ -3,7 +3,7 @@ title: "I Can Carry."
 novel: ihdc
 chapter_number: 42
 date: 2026-10-03
-draft: true
+draft: false
 ---
 It wasn’t actually that big of a deal for members of the same team to drink water from the same cup.
 
