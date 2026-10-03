@@ -3,7 +3,7 @@ title: "Next Round, I’ll Carry!"
 novel: ihdc
 chapter_number: 52
 date: 2026-10-03
-draft: true
+draft: false
 ---
 Ling Suyu’s pentakill comeback not only stunned the commentators and viewers, but even his teammates couldn’t help but gasp in amazement.
 
