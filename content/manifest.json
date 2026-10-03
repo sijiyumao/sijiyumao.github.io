@@ -17,7 +17,7 @@
       "novel": "ihdc",
       "chapter_number": 10,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-11-victory-shall-belong-to-us.md",
@@ -25,7 +25,7 @@
       "novel": "ihdc",
       "chapter_number": 11,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-12-surprised-unexpected.md",
@@ -33,7 +33,7 @@
       "novel": "ihdc",
       "chapter_number": 12,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-13-were-all-esports-players-but-youre-heartless.md",
@@ -41,7 +41,7 @@
       "novel": "ihdc",
       "chapter_number": 13,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-14-im-already-in-your-car.md",
@@ -49,7 +49,7 @@
       "novel": "ihdc",
       "chapter_number": 14,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-15-goodbye-see-you-never.md",
@@ -57,7 +57,7 @@
       "novel": "ihdc",
       "chapter_number": 15,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-16-dont-go-wild-at-night.md",
@@ -65,7 +65,7 @@
       "novel": "ihdc",
       "chapter_number": 16,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-17-i-need-you-to-do-some-overtime.md",
@@ -73,7 +73,7 @@
       "novel": "ihdc",
       "chapter_number": 17,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-18-no-worries-my-hunter-is-awesome.md",
@@ -81,7 +81,7 @@
       "novel": "ihdc",
       "chapter_number": 18,
       "date": "2026-10-03",
-      "draft": true
+      "draft": false
     },
     {
       "path": "content/chapters/ihdc-19-you-look-good-when-you-smile.md",
