@@ -12,6 +12,14 @@
       "draft": false
     },
     {
+      "path": "content/chapters/ihdc-10-the-enemy-heroes-have-all-fallen.md",
+      "title": "The Enemy Heroes Have All Fallen!",
+      "novel": "ihdc",
+      "chapter_number": 10,
+      "date": "2026-10-03",
+      "draft": true
+    },
+    {
       "path": "content/chapters/ihdc-2-this-marksman-is-just-a-coward.md",
       "title": "This Marksman is Just a Coward!",
       "novel": "ihdc",
@@ -40,6 +48,38 @@
       "title": "Even I Can Do That!",
       "novel": "ihdc",
       "chapter_number": 5,
+      "date": "2026-10-03",
+      "draft": true
+    },
+    {
+      "path": "content/chapters/ihdc-6-screenshot-for-the-record.md",
+      "title": "Screenshot For the Record!",
+      "novel": "ihdc",
+      "chapter_number": 6,
+      "date": "2026-10-03",
+      "draft": true
+    },
+    {
+      "path": "content/chapters/ihdc-7-have-you-no-respect-for-chivalry.md",
+      "title": "Have You No Respect for Chivalry?!",
+      "novel": "ihdc",
+      "chapter_number": 7,
+      "date": "2026-10-03",
+      "draft": true
+    },
+    {
+      "path": "content/chapters/ihdc-8-quadra-kill-godlike.md",
+      "title": "Quadra Kill! Godlike!",
+      "novel": "ihdc",
+      "chapter_number": 8,
+      "date": "2026-10-03",
+      "draft": true
+    },
+    {
+      "path": "content/chapters/ihdc-9-id-have-knocked-your-head-off.md",
+      "title": "I’d Have Knocked Your Head Off!",
+      "novel": "ihdc",
+      "chapter_number": 9,
       "date": "2026-10-03",
       "draft": true
     }
