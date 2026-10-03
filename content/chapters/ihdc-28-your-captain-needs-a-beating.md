@@ -3,7 +3,7 @@ title: "Your Captain Needs a Beating!"
 novel: ihdc
 chapter_number: 28
 date: 2026-10-03
-draft: true
+draft: false
 ---
 This was the first match Fight had played together since the New Year’s?
 
