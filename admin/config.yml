@@ -89,7 +89,7 @@ collections:
         field: {label: "Tag", name: "tag", widget: "string"}
 
   - name: "chapters"
-    label: "Chapters"
+    label: "All Chapters"
     label_singular: "Chapter"
     description: "Write chapters, add translator notes, and control publication."
     folder: "content/chapters"
@@ -113,6 +113,65 @@ collections:
     view_groups:
       - label: "Novel ID"
         field: "novel"
+    fields:
+      - label: "Chapter Title"
+        name: "title"
+        widget: "string"
+      - label: "Novel"
+        name: "novel"
+        widget: "relation"
+        collection: "novels"
+        search_fields: ["title", "id"]
+        display_fields: ["title"]
+        value_field: "id"
+        hint: "Choose the novel this chapter belongs to."
+      - label: "Chapter Number"
+        name: "chapter_number"
+        widget: "number"
+        value_type: "int"
+        min: 1
+      - label: "Publication Date"
+        name: "date"
+        widget: "datetime"
+        date_format: "YYYY-MM-DD"
+        time_format: false
+        format: "YYYY-MM-DD"
+      - label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: false
+        required: false
+        hint: "Turn this on to keep the chapter hidden from the public site."
+      - label: "Translator's Notes"
+        name: "translator_notes"
+        widget: "list"
+        required: false
+        summary: "Note {{fields.number}} — {{fields.note}}"
+        hint: "Optional. Add notes here, then place [^1], [^2], etc. in the Chapter Text where each note should appear. You no longer need to type the note definitions at the bottom."
+        fields:
+          - {label: "Number", name: "number", widget: "number", value_type: "int", min: 1}
+          - {label: "Note", name: "note", widget: "text"}
+      - label: "Chapter Text"
+        name: "body"
+        widget: "richtext"
+        modes: ["rich_text", "raw"]
+        buttons: ["bold", "italic", "strikethrough", "link", "heading-two", "heading-three", "quote"]
+        editor_components: []
+        hint: "For translator notes, type [^1], [^2], etc. at the relevant words. Add the corresponding note text in the Translator’s Notes section above."
+
+  - name: "ihdc_chapters"
+    label: "IHDC Chapters"
+    label_singular: "Chapter"
+    description: "IHDC chapters only. Write chapters, add translator notes, and control publication."
+    folder: "content/chapters"
+    create: true
+    extension: "md"
+    format: "frontmatter"
+    identifier_field: "title"
+    summary: "Chapter {{chapter_number}} — {{title}}"
+    slug: "{{novel}}-{{chapter_number}}-{{slug}}"
+    sortable_fields: ["date", "title", "chapter_number"]
+    filter: {field: "novel", value: "ihdc"}
     fields:
       - label: "Chapter Title"
         name: "title"
