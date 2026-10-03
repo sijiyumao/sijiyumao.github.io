@@ -3,7 +3,7 @@ title: "Cat Spirit, First Blood!"
 novel: ihdc
 chapter_number: 53
 date: 2026-10-03
-draft: true
+draft: false
 ---
 Fight’s loss in the second game against igame undoubtedly came as a relief to UH and their fans.
 
