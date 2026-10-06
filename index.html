@@ -120,6 +120,8 @@ html[data-theme="dark"] nav a:after{background:#91b8a9}
 .chapter-tools{align-items:stretch;flex-direction:column}
 .chapter{grid-template-columns:1fr auto;gap:5px 12px;padding:16px 18px}.chapter:hover{padding-left:18px}.chapter-number{grid-column:1}.chapter-title{grid-column:1}.chapter small{grid-column:2;grid-row:1/3;align-self:center}\n.back-to-top{right:14px;bottom:14px}\n.reader{width:min(92%,700px);padding:48px 0}.reader-head{margin-bottom:38px}.prose{font-size:1.08rem;line-height:1.95}.reader-nav{grid-template-columns:1fr 1fr}.reader-nav #backNovel{grid-column:1/-1;grid-row:2;justify-self:center}.reader-nav .btn{padding:10px 14px;font-size:.88rem}.chapter-nav-button{max-width:none}.chapter-nav-button small{max-width:135px}
 }
+
+.chapter-comments{margin-top:40px;padding-top:28px;border-top:1px solid var(--line)}.chapter-comments h2{font-size:1.65rem;margin:0 0 18px}
 </style>
 </head>
 <body>
@@ -211,6 +213,7 @@ html[data-theme="dark"] nav a:after{background:#91b8a9}
     <article id="prose" class="prose"></article>
     <div class="chapter-like"><button type="button" id="chapterLike" class="chapter-like-button" aria-pressed="false">♡ Like this chapter · …</button><p class="chapter-like-note">Shared like count · your like is remembered on this browser.</p></div>
     <div class="chapter-actions"><button type="button" id="shareChapter" class="share-chapter">↗ Share chapter</button></div>
+    <section class="chapter-comments" aria-label="Chapter comments"><h2>Comments ❀</h2><div id="echothread"></div></section>
     <div class="reader-nav"><button class="btn secondary chapter-nav-button" id="prev"><span class="chapter-nav-label">← Previous Chapter</span><small id="prevTitle"></small></button><a class="btn secondary" id="backNovel" href="#">All Chapters</a><button class="btn secondary chapter-nav-button" id="next"><span class="chapter-nav-label">Next Chapter →</span><small id="nextTitle"></small></button></div>
   </div>
   <button type="button" id="backToTop" class="back-to-top" aria-label="Back to top">↑ Top</button>
@@ -353,6 +356,7 @@ async function loadContent(){
   renderNovels(); renderRecent(); route();
 }
 function showPage(id){
+  if(id!=="readerPage") clearChapterComments();
   document.querySelectorAll(".page").forEach(p=>p.classList.remove("active"));
   document.getElementById(id)?.classList.add("active");
   window.scrollTo({top:0,behavior:"smooth"});
@@ -531,6 +535,38 @@ async function setChapterLikeButton(id,num){
     button.onclick=null;
   }
 }
+
+function clearChapterComments(){
+  const container=document.getElementById("echothread");
+  if(container._i?.destroy) container._i.destroy();
+  container._i=null;
+  container.replaceChildren();
+}
+function setChapterComments(n,c){
+  clearChapterComments();
+  const container=document.getElementById("echothread");
+  Object.assign(container.dataset,{
+    shortname:"yumao-novels",
+    apiKey:"6Svv3lWeTdBEgagATWPrBmc78nQ21gxYcbo1OkXEkJU",
+    identifier:"yumao:"+n.id+":chapter:"+c.chapter_number,
+    pageUrl:new URL("#read/"+encodeURIComponent(n.id)+"/"+c.chapter_number,location.origin+location.pathname).href,
+    pageTitle:n.title+" — Chapter "+c.chapter_number+": "+c.title,
+    themeSource:"--bg",
+    accentColor:"#a85f73",
+    fontFamily:"inherit",
+    radius:"12px"
+  });
+  if(window.EchoThread?.bootstrap){
+    window.EchoThread.bootstrap();
+  }else if(!document.getElementById("echothread-script")){
+    const script=document.createElement("script");
+    script.id="echothread-script";
+    script.src="https://cdn.echothread.io/widget.js";
+    script.async=true;
+    document.head.appendChild(script);
+  }
+}
+
 async function openChapter(id,num){
   const n=novels.find(x=>x.id===id), c=n?.chapters?.find(x=>String(x.chapter_number)===String(num)); if(!n||!c)return;
   document.getElementById("readerNovel").textContent=n.title;
@@ -550,6 +586,7 @@ async function openChapter(id,num){
   localStorage.setItem(`yumao-read:${n.id}:${c.chapter_number}`,"1");
   localStorage.setItem("yumao-last-read:"+n.id,String(c.chapter_number));
   showPage("readerPage");
+  setChapterComments(n,c);
   try{
     let full=chapterCache.get(c.path);
     if(!full){
