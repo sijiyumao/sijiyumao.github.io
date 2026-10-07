@@ -48,14 +48,14 @@ jobs:
           git push
           echo "changed=true" >> "$GITHUB_OUTPUT"
       - name: Upload public site artifact
-        if: steps.publish.outputs.changed == 'true'
+        if: steps.publish.outputs.changed == 'true' || github.event_name == 'push'
         uses: actions/upload-pages-artifact@v3
         with:
           path: "."
 
   deploy:
     needs: update-manifest
-    if: needs.update-manifest.outputs.changed == 'true'
+    if: needs.update-manifest.outputs.changed == 'true' || github.event_name == 'push'
     runs-on: ubuntu-latest
     permissions:
       pages: write
