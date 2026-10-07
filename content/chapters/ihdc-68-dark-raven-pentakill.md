@@ -402,7 +402,7 @@ Host: 
 
 Ling Suyu: 
 
-Live Audience: *\*snort\**.
+Live Audience: \*\*snort\*\*.
 
 Amid the live audience’s uncontrollable laughter, the host finally caught on: “Is that a roundabout way of acknowledging Feather’s Dark Raven’s strength? What’s your response to that, Feather?”
 
@@ -426,8 +426,6 @@ And then, in the midst of that silence, everyone heard Tang Yu’an, standing ne
 
 …
 
-
-
 **The author has something to say:**
 
 Ling Suyu: No comment. 
@@ -437,3 +435,11 @@ Inner voice: Dunno what to say, let’s just leave it.
 Others auto-translating in their heads: Losers, unworthy of a response.
 
 Tang Yu’an auto-translating in his head: Help! I don’t know how to respond! Tang Yu’an save me QAQ
+
+
+
+**The translator has something to say:**
+
+I honestly can’t relate to Ling Suyu in not caring for a character’s lore…I am the type that gets baited by competitive games’ character lore, even though I know it’s not going anywhere, and I will build teams around my ships even if it’s not viable (T~T)
+
+Hi everyone! Sorry for the late greeting, I was a bit busy scrambling to get everything set up last week, so I couldn't leave a proper note at the end. To both my old readers from CG and the new readers, glad you're here! Yumao Novels is new so I'm still working out some kinks, but I hope the reading experience has been good so far! Fun fact, my own Chinese name also ends with the character for feather, 羽, although my first translation project being ihdc was a complete coincidence haha
