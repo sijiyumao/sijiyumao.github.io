@@ -7,6 +7,9 @@ on:
       - "content/novels/**"
       - "content/chapters/**"
       - "scripts/build-manifest.py"
+      - ".github/workflows/update-content-manifest.yml"
+  schedule:
+    - cron: "*/15 * * * *"
   workflow_dispatch:
 
 permissions:

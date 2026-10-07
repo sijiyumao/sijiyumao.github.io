@@ -136,12 +136,18 @@ collections:
         date_format: "YYYY-MM-DD"
         time_format: false
         format: "YYYY-MM-DD"
+      - label: "Scheduled Release (Toronto time)"
+        name: "release_at"
+        widget: "string"
+        required: false
+        hint: "Optional: YYYY-MM-DD HH:mm in Toronto time (24-hour clock), e.g. 2026-10-10 12:00. Leave blank for immediate publication. Turn Hide from Public Site OFF to schedule. Fall-back ambiguous times use the first occurrence."
+        pattern: ['^\d{4}-\d{2}-\d{2} (?:[01]\d|2[0-3]):[0-5]\d$', "Use YYYY-MM-DD HH:mm."]
       - label: "Hide from Public Site"
         name: "draft"
         widget: "boolean"
         default: false
         required: false
-        hint: "ON = saved in Admin but hidden from readers. OFF = visible on the public site after saving. Decap's Publish button saves your changes to GitHub."
+        hint: "ON = saved in Admin but hidden from readers. OFF = visible after saving, or at Scheduled Release if set. Decap's Publish button saves your changes to GitHub."
       - label: "Translator's Notes"
         name: "translator_notes"
         widget: "list"
@@ -195,12 +201,18 @@ collections:
         date_format: "YYYY-MM-DD"
         time_format: false
         format: "YYYY-MM-DD"
+      - label: "Scheduled Release (Toronto time)"
+        name: "release_at"
+        widget: "string"
+        required: false
+        hint: "Optional: YYYY-MM-DD HH:mm in Toronto time (24-hour clock), e.g. 2026-10-10 12:00. Leave blank for immediate publication. Turn Hide from Public Site OFF to schedule. Fall-back ambiguous times use the first occurrence."
+        pattern: ['^\d{4}-\d{2}-\d{2} (?:[01]\d|2[0-3]):[0-5]\d$', "Use YYYY-MM-DD HH:mm."]
       - label: "Hide from Public Site"
         name: "draft"
         widget: "boolean"
         default: false
         required: false
-        hint: "ON = saved in Admin but hidden from readers. OFF = visible on the public site after saving. Decap's Publish button saves your changes to GitHub."
+        hint: "ON = saved in Admin but hidden from readers. OFF = visible after saving, or at Scheduled Release if set. Decap's Publish button saves your changes to GitHub."
       - label: "Translator's Notes"
         name: "translator_notes"
         widget: "list"
@@ -254,12 +266,18 @@ collections:
         date_format: "YYYY-MM-DD"
         time_format: false
         format: "YYYY-MM-DD"
+      - label: "Scheduled Release (Toronto time)"
+        name: "release_at"
+        widget: "string"
+        required: false
+        hint: "Optional: YYYY-MM-DD HH:mm in Toronto time (24-hour clock), e.g. 2026-10-10 12:00. Leave blank for immediate publication. Turn Hide from Public Site OFF to schedule. Fall-back ambiguous times use the first occurrence."
+        pattern: ['^\d{4}-\d{2}-\d{2} (?:[01]\d|2[0-3]):[0-5]\d$', "Use YYYY-MM-DD HH:mm."]
       - label: "Hide from Public Site"
         name: "draft"
         widget: "boolean"
         default: false
         required: false
-        hint: "ON = saved in Admin but hidden from readers. OFF = visible on the public site after saving. Decap's Publish button saves your changes to GitHub."
+        hint: "ON = saved in Admin but hidden from readers. OFF = visible after saving, or at Scheduled Release if set. Decap's Publish button saves your changes to GitHub."
       - label: "Translator's Notes"
         name: "translator_notes"
         widget: "list"

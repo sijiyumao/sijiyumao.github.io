@@ -4,11 +4,25 @@ import json
 import re
 from datetime import datetime, timezone
 from email.utils import format_datetime
+from zoneinfo import ZoneInfo
 from xml.sax.saxutils import escape
 
 ROOT = Path(__file__).resolve().parents[1]
 
 SITE_URL = "https://sijiyumao.github.io/"
+
+TORONTO = ZoneInfo("America/Toronto")
+NOW = datetime.now(timezone.utc)
+
+def release_time(value):
+    if not value:
+        return None
+    local = datetime.strptime(str(value), "%Y-%m-%d %H:%M")
+    aware = local.replace(tzinfo=TORONTO, fold=0)
+    # Reject nonexistent times during the spring DST transition.
+    if aware.astimezone(timezone.utc).astimezone(TORONTO).replace(tzinfo=None) != local:
+        raise ValueError("This Toronto time does not exist due to daylight saving time.")
+    return aware.astimezone(timezone.utc)
 
 def build_rss(chapters, novel_paths):
     novels = {}
@@ -32,7 +46,7 @@ def build_rss(chapters, novel_paths):
         title = f"{novel_title} — Chapter {number}: {chapter_title}"
         link = f"{SITE_URL}#read/{ch['novel']}/{number}"
         try:
-            dt = datetime.strptime(str(ch["date"]), "%Y-%m-%d").replace(tzinfo=timezone.utc)
+            dt = datetime.fromisoformat(ch["release_at"]) if ch.get("release_at") else datetime.strptime(str(ch["date"]), "%Y-%m-%d").replace(tzinfo=timezone.utc)
             pub_date = format_datetime(dt)
         except ValueError:
             pub_date = format_datetime(datetime.now(timezone.utc))
@@ -99,7 +113,16 @@ def chapter_metadata(relative_path):
         print(f"Skipping {relative_path}: missing required chapter metadata.")
         return None
 
+    try:
+        due = release_time(meta.get("release_at"))
+    except ValueError as exc:
+        print(f"Keeping {relative_path} hidden: invalid scheduled release ({exc})")
+        return None
+    if due and due > NOW:
+        return None
+
     return {
+        "release_at": due.isoformat() if due else None,
         "path": relative_path,
         "title": meta["title"],
         "novel": meta["novel"],
