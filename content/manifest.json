@@ -617,6 +617,24 @@
       "draft": false
     },
     {
+      "release_at": "2026-10-10T14:00:00+00:00",
+      "path": "content/chapters/ihdc-68-dark-raven-pentakill.md",
+      "title": "Dark Raven, Pentakill!",
+      "novel": "ihdc",
+      "chapter_number": 68,
+      "date": "2026-10-10",
+      "draft": false
+    },
+    {
+      "release_at": "2026-10-10T14:00:00+00:00",
+      "path": "content/chapters/ihdc-69-tang-yuan-is-too-shameless.md",
+      "title": "Tang Yu'an is Too Shameless!",
+      "novel": "ihdc",
+      "chapter_number": 69,
+      "date": "2026-10-10",
+      "draft": false
+    },
+    {
       "release_at": null,
       "path": "content/chapters/ihdc-7-have-you-no-respect-for-chivalry.md",
       "title": "Have You No Respect for Chivalry?!",
