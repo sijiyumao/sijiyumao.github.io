@@ -53,8 +53,6 @@ Lost in those distant memories, Yang Zheng found himself eating more slowly with
 
 Yang Zheng quickly assured him that wasn’t the case, explaining that some work-related matters were weighing on his mind, and he swiftly changed the subject: “Xiao-Jin[^3], why did you suddenly decide to learn Texas Hold’em?”
 
-
-
 Ren Jinhuan kept his gaze fixed on him and replied after a two-second pause: “I was a little curious when I heard you mention it earlier, and it seemed like a lot of people at the company played it, so I wanted to learn about what’s currently popular in your poker circle. That way, I’ll have more things in common to talk about with everyone, including you, Senior Brother.” The last sentence was spoken softly, as if merely an afterthought, yet it tickled his heart like a feather. Yang Zheng lowered his head, took a few bites of rice, and said with a smile, “You can talk about anything you want. ” Even if the topic was unfamiliar, he was willing to listen.
 
 Soon after, the two arrived at the café they’d booked in advance. Yang Zheng took out a deck of cards and explained the rules of Texas Hold’em from start to finish, his reasoning clear and his explanation well-structured. He’d often tutored others in the past, so he was genuinely skilled at this.
@@ -141,4 +139,4 @@ Jin Xiangtang turned around and watched as he slowly walked up to him. He lifted
 
 He had anticipated the first part: “Can you really not help me?”
 
-What took him by surprise was the way he addressed him. He didn’t call him “Director Jin,” but “Senior.” [^6]
+What took him by surprise was the way he addressed him. He didn’t call him “Director Jin,” but “Senior.”[^6]
