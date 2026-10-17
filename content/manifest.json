@@ -671,6 +671,24 @@
       "draft": false
     },
     {
+      "release_at": "2026-10-17T14:00:00+00:00",
+      "path": "content/chapters/ihdc-70-sorry-my-hand-slipped.md",
+      "title": "Sorry, My Hand Slipped.",
+      "novel": "ihdc",
+      "chapter_number": 70,
+      "date": "2026-10-17",
+      "draft": false
+    },
+    {
+      "release_at": "2026-10-17T14:00:00+00:00",
+      "path": "content/chapters/ihdc-71-the-only-thing-i-want-to-say-is-we-will-win.md",
+      "title": "The Only Thing I Want to Say Is, We Will Win. ",
+      "novel": "ihdc",
+      "chapter_number": 71,
+      "date": "2026-10-17",
+      "draft": false
+    },
+    {
       "release_at": null,
       "path": "content/chapters/ihdc-8-quadra-kill-godlike.md",
       "title": "Quadra Kill! Godlike!",
