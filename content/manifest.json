@@ -78,6 +78,15 @@
     },
     {
       "release_at": null,
+      "path": "content/chapters/agtb-9-youre-out.md",
+      "title": "You're Out.",
+      "novel": "agtb",
+      "chapter_number": 9,
+      "date": "2026-10-27",
+      "draft": false
+    },
+    {
+      "release_at": null,
       "path": "content/chapters/ihdc-1-guardian-spirit-got-first-blood.md",
       "title": "Guardian Spirit Got First Blood!",
       "novel": "ihdc",
